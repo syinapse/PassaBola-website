@@ -1,11 +1,12 @@
 
 import './App.css'
+import { PortalInicial } from './pages/PortalInicial'
 
 function App() {
 
   return (
     <>
-  <h2 className='text-blue-600'>Teste</h2>
+  <PortalInicial/>
     </>
   )
 }
