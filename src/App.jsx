@@ -1,11 +1,13 @@
-
 import './App.css'
+import React from 'react';
+import { Header1 } from './components/Header1'
+
 
 function App() {
 
   return (
     <>
-  <h2 className='text-blue-600'>Teste</h2>
+  <Header1 />
     </>
   )
 }
