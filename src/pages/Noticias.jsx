@@ -2,7 +2,7 @@ import React from 'react';
 import PartidaResultado from '../components/PartidaResultado';
 import NoticiasHero from '../components/NoticiasHero';
 
-const HomePage = () => {
+const Noticias = () => {
   return (
     <main>
       <NoticiasHero />
@@ -13,4 +13,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Noticias;
