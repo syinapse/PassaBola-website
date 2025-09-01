@@ -9,11 +9,11 @@ export const Header1 = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-black">
 
-      <div className="flex items-center gap-20 text-amber-50">
-        <h1 className="text-xl font-bold">LOGO</h1>
+      <div className="flex items-center gap-20   text-amber-50 font-bold">
+        <h1 className="text-xl font-bold  ">LOGO</h1>
         <nav>
-          <ul className="flex gap-6">
-            <li><a href="#noticias">Notícias</a></li>
+          <ul className="flex gap-20  ">
+            <li><a href="#noticias" >Notícias</a></li>
             <li><a href="#loja">Loja</a></li>
             <li><a href="#conexoes">Conexões</a></li>
           </ul>
