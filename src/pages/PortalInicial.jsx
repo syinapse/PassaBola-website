@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header1 } from '../components/Header1'
+import { Footer } from '../components/Footer'
 
 export const PortalInicial = () => {
 
@@ -56,6 +57,7 @@ export const PortalInicial = () => {
 
     </section>
    </section>
+   <Footer/>
     </div>
   )
 }
