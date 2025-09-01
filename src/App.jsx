@@ -1,12 +1,12 @@
 import './App.css'
 import Noticias from './pages/Noticias'
+import { PortalInicial } from './pages/PortalInicial'
 
 function App() {
 
   return (
     <>
-  <h2 className='text-blue-600'>Teste</h2>
-  <Noticias/>
+<PortalInicial/>
     </>
   )
 }
