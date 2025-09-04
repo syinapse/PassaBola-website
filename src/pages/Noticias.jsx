@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
-import { FaPlay } from 'react-icons/fa';
+
 
 export const Noticias = () => {
   return (
@@ -12,7 +12,7 @@ export const Noticias = () => {
         {/* A classe 'py-22' não é padrão no Tailwind. Usamos 'py-24' como alternativa. */}
         <div className="flex flex-col items-center space-y-4">
           <button className='flex items-center justify-center w-20 h-20 rounded-full bg-white transition-transform transform hover:scale-110'>
-            <FaPlay className="text-4xl text-black ml-1" />
+          
           </button>
           <p className='font-bold text-lg'>Assista a Matéria</p>
         </div>
