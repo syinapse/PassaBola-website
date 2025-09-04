@@ -13,9 +13,10 @@ export const Header1 = () => {
         <h1 className="text-xl font-bold  ">LOGO</h1>
         <nav>
           <ul className="flex gap-20  ">
-            <li><a href="#noticias" >Notícias</a></li>
-            <li><a href="#loja">Loja</a></li>
-            <li><a href="#conexoes">Conexões</a></li>
+            <li><a href="#" >Notícias</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Conexões</a></li>
+            <li><a href="#">Sobre</a></li>
           </ul>
         </nav>
       </div>
