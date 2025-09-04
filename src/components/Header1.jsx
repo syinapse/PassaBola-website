@@ -7,15 +7,16 @@ export const Header1 = () => {
   }
 
   return (
-    <header className="flex justify-between items-center p-4 bg-black">
+    <header className="flex justify-between items-center p-4 bg-background-3">
 
       <div className="flex items-center gap-20   text-amber-50 font-bold">
         <h1 className="text-xl font-bold  ">LOGO</h1>
         <nav>
           <ul className="flex gap-20  ">
-            <li><a href="#noticias" >Notícias</a></li>
-            <li><a href="#loja">Loja</a></li>
-            <li><a href="#conexoes">Conexões</a></li>
+            <li><a href="#" >Notícias</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Conexões</a></li>
+            <li><a href="#">Sobre</a></li>
           </ul>
         </nav>
       </div>
