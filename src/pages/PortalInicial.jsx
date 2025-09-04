@@ -57,7 +57,7 @@ export const PortalInicial = () => {
 
     </section>
    </section>
-   <Footer/>
+<Footer/>
     </div>
   )
 }

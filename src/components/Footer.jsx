@@ -1,9 +1,8 @@
 import React from 'react'
-
 export const Footer = () => {
   return (
     <footer className='bg-background-3 text-white'>
-      <div className='  flex items-center h-55 p-10 '>
+      <div className='  flex items-center p-10 '>
         <div className='flex justify-around w-1/2'> 
       <div>LOGO</div>
       <div className='flex flex-col gap-2'>
