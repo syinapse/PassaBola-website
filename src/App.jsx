@@ -1,13 +1,13 @@
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import Noticias from './pages/Noticias'
-import { PortalInicial } from './pages/PortalInicial'
+import { AppRouter } from './AppRouter'
 
 function App() {
 
   return (
-    <>
-<PortalInicial/>
-    </>
+<BrowserRouter>
+<AppRouter/>
+</BrowserRouter>
   )
 }
 
