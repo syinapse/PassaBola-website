@@ -28,7 +28,7 @@ export const Noticias = () => {
               alt="Brazil Flag"
               className="h-12 w-12 rounded-full mb-1"
             />
-            <p className="text-sm font-bold">BRA</p>
+            <p className="text-sm font-bold"></p>
           </div>
           <span className="text-5xl font-bold text-gray-800">0 x 1</span>
           <div className="flex flex-col items-center">
