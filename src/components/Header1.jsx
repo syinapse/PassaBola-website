@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export const Header1 = () => {
   const handleClick = () => {
     alert('Botão clicado!')
+    navigate('/cadastro')
   }
 const navigate = useNavigate()
   return (
