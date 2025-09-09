@@ -1,11 +1,12 @@
 import React from 'react'
 import { ButtonCadastro } from './ui/ButtonCadastro'
+import { useNavigate } from 'react-router-dom'
 
 export const Header1 = () => {
   const handleClick = () => {
     alert('Botão clicado!')
   }
-
+const navigate = useNavigate()
   return (
     <header className="flex justify-between items-center p-4 bg-black">
 
@@ -13,10 +14,10 @@ export const Header1 = () => {
         <h1 className="text-xl font-bold  ">LOGO</h1>
         <nav>
           <ul className="flex gap-20  ">
-            <li><a href="#noticias" >Notícias</a></li>
-            <li><a href="#loja">Loja</a></li>
-            <li><a href="#conexoes">Conexões</a></li>
-            <li><a href="#conexoes">Sobre</a></li>
+            <li><button onClick={() => navigate("/noticias")}>Notícas</button></li>
+            <li><button onClick={() => navigate("/loja")}>Loja</button></li>
+            <li><button onClick={() => navigate("/conexões")}>Conexões</button></li>
+            <li><button onClick={() => navigate("/sobre")}>Sobre</button></li>
           </ul>
         </nav>
       </div>
