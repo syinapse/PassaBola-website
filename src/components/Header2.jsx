@@ -1,8 +1,8 @@
 import React from 'react'
-import { ButtonCadastro } from './ui/ButtonCadastro'
 import { useNavigate } from 'react-router-dom'
+import { ButtonCadastro } from './ui/ButtonCadastro'
 
-export const Header1 = () => {
+export const Header2 = () => {
   const handleClick = () => {
     navigate('/cadastro')
   }
@@ -23,10 +23,7 @@ const navigate = useNavigate()
       </div>
 
 
-      <div className="flex items-center gap-2 text-white">
-        <span>O</span>
-        <ButtonCadastro onClick={handleClick} />
-      </div>
+
     </header>
   )
 }
