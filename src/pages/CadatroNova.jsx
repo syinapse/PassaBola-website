@@ -1,10 +1,11 @@
 import React from 'react'
 import { Header1 } from '../components/Header1'
+import { Header2 } from '../components/ui/Header2'
 
 export const CadatroNova = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <Header1 />
+      <Header2/>
       <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 px-4">
         <h2 className="text-4xl font-bold">LOGO</h2>
         <h2 className="text-4xl font-bold">
