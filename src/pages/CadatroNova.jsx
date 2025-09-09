@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header1 } from '../components/Header1'
-import { Header2 } from '../components/ui/Header2'
+import { Header2 } from '../components/Header2'
 import { useNavigate } from 'react-router-dom'
 
 export const CadatroNova = () => {
