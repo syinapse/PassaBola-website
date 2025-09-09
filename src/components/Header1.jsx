@@ -16,6 +16,7 @@ export const Header1 = () => {
             <li><a href="#noticias" >Notícias</a></li>
             <li><a href="#loja">Loja</a></li>
             <li><a href="#conexoes">Conexões</a></li>
+            <li><a href="#conexoes">Sobre</a></li>
           </ul>
         </nav>
       </div>
