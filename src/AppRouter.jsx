@@ -5,6 +5,7 @@ import { PortalInicial } from './pages/PortalInicial'
 import { Error404 } from './pages/Error404'
 import { Noticias } from './pages/Noticias'
 import { CadatroNova } from './pages/CadatroNova'
+import { Login } from './pages/Login'
 
 export const AppRouter = () => {
   return (
@@ -14,6 +15,7 @@ export const AppRouter = () => {
     <Route path='*' element={<Error404/>}/>
     <Route path='/noticias' element={<Noticias/>}/>
     <Route path='/cadastro' element={<CadatroNova/>}/>
+    <Route path='/login' element={<Login/>}/>
 
     </Routes>
 

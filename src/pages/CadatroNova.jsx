@@ -1,8 +1,10 @@
 import React from 'react'
 import { Header1 } from '../components/Header1'
 import { Header2 } from '../components/ui/Header2'
+import { useNavigate } from 'react-router-dom'
 
 export const CadatroNova = () => {
+    const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header2/>
@@ -26,8 +28,9 @@ export const CadatroNova = () => {
           </div>
           <p className="text-gray-700 italic font-bold">
             Já possui uma conta?{' '}
-            <span className="text-primary-2  font-semibold cursor-pointer underline ">
-              Acesse o Login
+            <span className="text-primary-2  font-semibold cursor-pointer ">
+             <button onClick={() => navigate('/login')}
+             className='underline'>Acesse o Login</button> 
             </span>
           </p>
         </div>
