@@ -8,7 +8,7 @@ export const Header2 = () => {
   }
 const navigate = useNavigate()
   return (
-    <header className="flex justify-between items-center p-6 bg-black">
+    <header className="flex justify-between items-center p-6 bg-secondary-2">
 
       <div className="flex items-center gap-20   text-amber-50 font-bold">
         <h1 className="text-xl font-bold  ">LOGO</h1>
