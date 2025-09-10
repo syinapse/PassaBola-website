@@ -5,6 +5,12 @@ export const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+    
+  const users = [
+    { username: "leonardokina18@gmail.com", password: "1234" },
+    { username: "mariaplays@gmail.com", password: "abcd" }
+  ];
+
   return (
     
     <div>
