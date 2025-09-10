@@ -5,11 +5,9 @@ import { Footer } from '../components/Footer';
 
 export const Noticias = () => {
   return (
-    // Esta é a div pai única que encapsula todo o conteúdo do componente
     <div>
       <Header1 />
       <section className='bg-blue-500 text-white flex flex-col items-center justify-center py-24 px-4'>
-        {/* A classe 'py-22' não é padrão no Tailwind. Usamos 'py-24' como alternativa. */}
         <div className="flex flex-col items-center space-y-4">
           <button className='flex items-center justify-center w-20 h-20 rounded-full bg-white transition-transform transform hover:scale-110'>
           
@@ -18,9 +16,7 @@ export const Noticias = () => {
         </div>
       </section>
 
-      {/* Box de Placar do Jogo */}
       <div className="bg-white rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
-        {/* Removido o 'justify-between' duplicado */}
         <div className="flex items-center justify-center space-x-8">
           <div className="flex flex-col items-center">
             <img
@@ -60,7 +56,7 @@ export const Noticias = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm text-gray-500 mt-8 mb-12">
             <div className="flex items-center mb-2 sm:mb-0">
                 <div className="w-10 h-10 rounded-full bg-gray-300"></div>
-              <p className="font-medium">Escrito por<span className="text-gray-800">Camila Duarte</span></p>
+              <p className="font-medium">Escrito por <span className="text-gray-800">Camila Duarte</span></p>
             </div>
             <p className="text-right">
               Publicado em <br /> 11/08/24 - 14:35
@@ -69,7 +65,7 @@ export const Noticias = () => {
 
           <div className="text-lg leading-relaxed text-gray-700 font-serif">
             <p className="mb-6">
-              <span className="float-left text-7xl leading-none -mt-3 mr-2 font-light text-gray-900">E</span>m uma partida marcada pela tensão e pela intensidade, a Seleção Brasileira Feminina foi superada pelos Estados Unidos e deu adeus ao sonho olímpico. O confronto, válido pelas fases eliminatórias, foi decidido nos detalhes — aqueles que costumam pesar quando a experiência, o histórico e a frieza se impõem. O Brasil lutou até o último minuto, mas não conseguiu traduzir sua entrega em gols, sendo eliminado da competição sem alcançar o pódio. A derrota, não apenas pelo resultado, mas pelo simbolismo de mais uma geração talentosa que sai sem a consagração internacional que tanto merece.
+              <span className="text-7xl leading-none -mt-3 mr-2 font-light text-gray-900">E</span>m uma partida marcada pela tensão e pela intensidade, a Seleção Brasileira Feminina foi superada pelos Estados Unidos e deu adeus ao sonho olímpico. O confronto, válido pelas fases eliminatórias, foi decidido nos detalhes — aqueles que costumam pesar quando a experiência, o histórico e a frieza se impõem. O Brasil lutou até o último minuto, mas não conseguiu traduzir sua entrega em gols, sendo eliminado da competição sem alcançar o pódio. A derrota, não apenas pelo resultado, mas pelo simbolismo de mais uma geração talentosa que sai sem a consagração internacional que tanto merece.
             </p>
 
             <p className="mb-6">
@@ -88,26 +84,7 @@ export const Noticias = () => {
             <h2>Mais sobre futebol</h2>
           </div>
           <br></br>
-          <div className="flex flex-col space-y-4">
-            <div className="relative w-full h-36 rounded-lg overflow-hidden shadow-md group cursor-pointer">
-              <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 group-hover:bg-opacity-70"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <p className="text-white text-lg font-bold text-center leading-snug">Libertadores é do timão! Corinthians feminino levanta a taça</p>
-              </div>
-            </div>
-            <div className="relative w-full h-36 rounded-lg overflow-hidden shadow-md group cursor-pointer">
-              <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 group-hover:bg-opacity-70"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <p className="text-white text-lg font-bold text-center leading-snug">Brasil luta, mas é derrotado na final contra os EUA</p>
-              </div>
-            </div>
-            <div className="relative w-full h-36 rounded-lg overflow-hidden shadow-md group cursor-pointer">
-              <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 group-hover:bg-opacity-70"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <p className="text-white text-lg font-bold text-center leading-snug">Arthur Elias convoca seleção com presença marcante de Marta</p>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="mt-12">
             <div className="flex items-center mb-6">
@@ -127,7 +104,7 @@ export const Noticias = () => {
                 </div>
               </div>
 
-              <button className="bg-purple-600 text-white font-bold px-6 py-3 hover:bg-purple-700 transition-colors duration-200">
+              <button className="bg-purple-600 text-white font-bold px-6 py-3 hover:bg-purple-700 transition-colors duration-200 cursor-pointer">
                 Entre para Publicar
               </button>
             </div>
