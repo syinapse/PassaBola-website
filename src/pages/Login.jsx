@@ -23,9 +23,15 @@ export const Login = () => {
   }
 
   return (
-    
     <div>
-        <Header3/>
+         <Header3/>
+    <div className='min-h-screen flex'>
+          <div className="w-1/2 bg-white flex items-center justify-center">
+        {/*lado esqurdo da tela de ligin*/}
+        <h1 className="text-3xl font-bold">Logo / Imagem</h1>
+      </div>
+        <div className='w-1/2 flex flex-col items-center justify-center bg-gray-100'>
+              {/*lado direito da tela de ligin*/}
         <input type="text"
         placeholder='email'
         value={username}
@@ -44,6 +50,8 @@ export const Login = () => {
             {message}
           </p>
         )}
+        </div>
+    </div>
     </div>
   )
 }
