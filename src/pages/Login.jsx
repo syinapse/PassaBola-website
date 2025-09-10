@@ -39,23 +39,37 @@ export const Login = () => {
               <button>Entre com Google</button>
             </div>
           <hr className="border-t border-gray-400 w-2xl my-4" />
-      <div>
-        <div className='flex flex-col'>
-          <p>Email</p>
-        <input 
+<div className="flex flex-col gap-4 w-full max-w-md">
+  <div className="flex flex-col">
+    <p className="mb-1">Email</p>
+    <div className="flex items-center border-2 border-secondary-2 rounded gap-2 px-2">
+      <p>O</p>
+      <input
         type="text"
-        placeholder='email'
+        placeholder="exemplo@email.com"
         value={username}
-        onChange={(e) => setUsername(e.target.value)} />
-        </div>
-        <div className='flex flex-col'>
-          <p>Senha</p>
-          <input type="password"
-        placeholder='password'
+        onChange={(e) => setUsername(e.target.value)}
+        className="flex-1 outline-none p-2" 
+      />
+    </div>
+  </div>
+
+  <div className="flex flex-col">
+    <p className="mb-1">Senha</p>
+    <div className="flex items-center border-2 border-secondary-2 rounded gap-2 px-2">
+      <p>O</p>
+      <input
+        type="password"
+        placeholder="minhasenha1234"
         value={password}
-        onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        </div>
+        onChange={(e) => setPassword(e.target.value)}
+        className="flex-1 outline-none p-2"
+      />
+      <p>O</p>
+    </div>
+  </div>
+</div>
+
         <button onClick={handleLogin}>Clique</button>
           {message && (
           <p
