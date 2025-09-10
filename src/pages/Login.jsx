@@ -25,13 +25,20 @@ export const Login = () => {
   return (
     <div>
          <Header3/>
-    <div className='min-h-screen flex'>
+    <div className='min-h-screen flex  overflow-hidden'>
           <div className="w-1/2 bg-white flex items-center justify-center">
         {/*lado esqurdo da tela de ligin*/}
         <h1 className="text-3xl font-bold">Logo / Imagem</h1>
       </div>
-        <div className='w-1/2 flex flex-col items-center justify-center bg-gray-100'>
+
+
+        <div className='w-1/2 flex flex-col items-center justify-center bg-background'>
               {/*lado direito da tela de ligin*/}
+              <h2>Login <span>PASSA A BOLA</span></h2>
+              <button>Entre com Google</button>
+          <hr className="border-t border-gray-400 w-2xl my-4" />
+
+
         <input type="text"
         placeholder='email'
         value={username}
