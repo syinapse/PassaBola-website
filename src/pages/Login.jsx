@@ -32,21 +32,30 @@ export const Login = () => {
       </div>
 
 
-        <div className='w-1/2 flex flex-col items-center justify-center bg-background'>
+        <div className='w-1/2 flex flex-col items-center justify-center gap-10 bg-background'>
               {/*lado direito da tela de ligin*/}
+        <div className='flex flex-col items-start ml-20 w-full'>
               <h2>Login <span>PASSA A BOLA</span></h2>
               <button>Entre com Google</button>
+            </div>
           <hr className="border-t border-gray-400 w-2xl my-4" />
-
-
-        <input type="text"
+      <div>
+        <div className='flex flex-col'>
+          <p>Email</p>
+        <input 
+        type="text"
         placeholder='email'
         value={username}
         onChange={(e) => setUsername(e.target.value)} />
+        </div>
+        <div className='flex flex-col'>
+          <p>Senha</p>
           <input type="password"
         placeholder='password'
         value={password}
         onChange={(e) => setPassword(e.target.value)} />
+        </div>
+        </div>
         <button onClick={handleLogin}>Clique</button>
           {message && (
           <p
