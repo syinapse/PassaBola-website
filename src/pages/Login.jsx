@@ -49,7 +49,7 @@ export const Login = () => {
         placeholder="exemplo@email.com"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="flex-1 outline-none p-2 " 
+        className="flex-1 outline-none p-2 border-none " 
       />
     </div>
   </div>
@@ -68,12 +68,16 @@ export const Login = () => {
       <p>O</p>
     </div>
   </div>
+  <p className='ml-auto text-gray-400 font-medium italic'>Esqueci minha senha...</p>
 </div>
-
-        <button onClick={handleLogin}>ACESSAR</button>
+    <div className='flex flex-col gap-5'>
+        <button className='bg-primary text-white font-semibold px-18 py-4 rounded-xl shadow-md text-xl' 
+        onClick={handleLogin}>ACESSAR</button>
+        <p className='font-medium'>Não possuí uma conta? <span className='text-primary underline'>Crie Agora!</span></p>
+        </div>
           {message && (
           <p
-            className={`mt-3 text-center ${
+            className={`text-center ${
               message.includes("bem-sucedido") ? "text-green-600" : "text-red-600"
             }`}
           >
