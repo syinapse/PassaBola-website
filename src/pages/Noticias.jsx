@@ -43,12 +43,12 @@ export const Noticias = () => {
       <div className="font-sans min-h-screen py-10 px-4">
         <div className="max-w-3xl mx-auto bg-white p-6 md:p-12 rounded-lg">
           <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight md:leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight md:leading-tight text-left">
               Brasil luta, mas é <br className="hidden md:inline" />
               derrotado na final contra <br className="hidden md:inline" />
               os EUA
             </h1>
-            <p className="text-lg text-gray-600 mt-5 leading-relaxed">
+            <p className="text-lg text-gray-600 mt-5 leading-relaxed text-left">
               A Seleção Brasileira Feminina se despediu das Olimpíadas após ser derrotada pelos Estados Unidos em uma partida equilibrada, marcada por forte marcação e poucas chances claras. Apesar da garra, o Brasil não conseguiu furar a defesa americana e deu adeus à competição.
             </p>
           </div>
@@ -83,9 +83,32 @@ export const Noticias = () => {
             <span className="mr-2 text-2xl"></span>
             <h2>Mais sobre futebol</h2>
           </div>
-          <br></br>
-          
+          <br /><br />
+          <div className="flex flex-col items-center justify-center p-4">
+      <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+        <img
+          src="....."
+          alt="Corinthians feminino"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
+      <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+        <img
+          src="..."
+          alt="Brasil x EUA"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+        <img
+          src="...."
+          alt="Arthur Elias e Marta"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>          
           <div className="mt-12">
             <div className="flex items-center mb-6">
               <h3 className="text-xl font-bold text-gray-800">Conversas Bate-bola</h3>
@@ -100,11 +123,11 @@ export const Noticias = () => {
                     placeholder="Digite seu comentário..."
                     className="w-full pl-4 pr-10 py-3 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl cursor-pointer">😀</span>
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl cursor-pointer">O</span>
                 </div>
               </div>
 
-              <button className="bg-purple-600 text-white font-bold px-6 py-3 hover:bg-purple-700 transition-colors duration-200 cursor-pointer">
+              <button className="bg-purple-700 rounded-md text-white font-bold px-5 py-2 hover:bg-purple-700 transition-colors duration-200 cursor-pointer">
                 Entre para Publicar
               </button>
             </div>
