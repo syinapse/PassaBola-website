@@ -23,9 +23,9 @@ export const Login = () => {
   }
 
   return (
-    <div>
+    <div className='h-screen overflow-hidden'>
          <Header3/>
-    <div className='min-h-screen flex  overflow-hidden'>
+    <div className='min-h-screen flex '>
           <div className="w-1/2 bg-white flex items-center justify-center">
         {/*lado esqurdo da tela de ligin*/}
         <h1 className="text-3xl font-bold">Logo / Imagem</h1>

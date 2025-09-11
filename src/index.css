@@ -1,10 +1,5 @@
 @import "tailwindcss";
-html, body {
-  height: 100%;
-  overflow: hidden; 
-  margin: 0;
-  padding: 0;
-}
+
 @theme {
   --color-accent-2: #9747FF;
   --color-accent: #B868E3;
