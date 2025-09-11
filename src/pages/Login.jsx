@@ -32,13 +32,13 @@ export const Login = () => {
       </div>
 
 
-        <div className='w-1/2 flex flex-col items-center justify-center gap-10 bg-background'>
+        <div className='w-1/2 flex flex-col items-center justify-start pt-25 gap-20 min-h-screen bg-background'>
               {/*lado direito da tela de ligin*/}
-        <div className='flex flex-col items-start ml-20 w-full'>
-              <h2>Login <span>PASSA A BOLA</span></h2>
-              <button>Entre com Google</button>
-            </div>
+        <div className='flex flex-col items-start ml-8 md:ml-20 lg:ml-40 px-8 w-full gap-3'>
+              <h2 className='text-3xl'>Login <span className='text-text-accent'>PASSA A BOLA</span></h2>
+              <button className='bg-white p-2 rounded-2xl border-1 border-gray-300 font-semibold cursor-pointer'>G Entre com Google</button>
           <hr className="border-t border-gray-400 w-2xl my-4" />
+            </div>
 <div className="flex flex-col gap-4 w-full max-w-md">
   <div className="flex flex-col">
     <p className="mb-1">Email</p>
@@ -49,14 +49,14 @@ export const Login = () => {
         placeholder="exemplo@email.com"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="flex-1 outline-none p-2" 
+        className="flex-1 outline-none p-2 " 
       />
     </div>
   </div>
 
   <div className="flex flex-col">
     <p className="mb-1">Senha</p>
-    <div className="flex items-center border-2 border-secondary-2 rounded gap-2 px-2">
+    <div className="flex items-center border-2 border-secondary-2  rounded gap-2 px-2">
       <p>O</p>
       <input
         type="password"
@@ -70,7 +70,7 @@ export const Login = () => {
   </div>
 </div>
 
-        <button onClick={handleLogin}>Clique</button>
+        <button onClick={handleLogin}>ACESSAR</button>
           {message && (
           <p
             className={`mt-3 text-center ${
