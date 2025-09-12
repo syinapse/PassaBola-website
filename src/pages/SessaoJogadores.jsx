@@ -12,7 +12,7 @@ export const SessaoJogadores = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="col-span-1 space-y-6">
 
-            <div className="bg-white rounded-xl shadow-sm h-fit">
+            <div className="bg-white rounded-xl shadow-sm">
               <div className="relative">
                 <img
                   src="....."

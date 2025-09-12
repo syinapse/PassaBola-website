@@ -10,7 +10,7 @@ export const Noticias = () => {
       <section className='bg-blue-500 text-white flex flex-col items-center justify-center py-24 px-4'>
         <div className="flex flex-col items-center space-y-4">
           <button className='flex items-center justify-center w-20 h-20 rounded-full bg-white transition-transform transform hover:scale-110'>
-          
+
           </button>
           <p className='font-bold text-lg'>Assista a Matéria</p>
         </div>
@@ -54,14 +54,22 @@ export const Noticias = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm text-gray-500 mt-8 mb-12">
-            <div className="flex items-center mb-2 sm:mb-0">
-                <div className="w-10 h-10 rounded-full bg-gray-300"></div>
-              <p className="font-medium">Escrito por <span className="text-gray-800">Camila Duarte</span></p>
+            <div className="flex items-center mb-2">
+              <img
+                src="....."
+                alt="Foto de perfil"
+                className="w-10 h-10 rounded-full object-cover"
+              />
+              <p className="ml-3 font-medium">
+                Escrito por <span className="text-gray-800">Camila Duarte</span>
+              </p>
             </div>
             <p className="text-right">
               Publicado em <br /> 11/08/24 - 14:35
             </p>
           </div>
+
+
 
           <div className="text-lg leading-relaxed text-gray-700 font-serif">
             <p className="mb-6">
@@ -85,30 +93,30 @@ export const Noticias = () => {
           </div>
           <br /><br />
           <div className="flex flex-col items-center justify-center p-4">
-      <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
-        <img
-          src="....."
-          alt="Corinthians feminino"
-          className="w-full h-full object-cover"
-        />
-      </div>
+            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+              <img
+                src="....."
+                alt="Corinthians feminino"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-      <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
-        <img
-          src="..."
-          alt="Brasil x EUA"
-          className="w-full h-full object-cover"
-        />
-      </div>
+            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+              <img
+                src="..."
+                alt="Brasil x EUA"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-      <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
-        <img
-          src="...."
-          alt="Arthur Elias e Marta"
-          className="w-full h-full object-cover"
-        />
-      </div>
-    </div>          
+            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+              <img
+                src="...."
+                alt="Arthur Elias e Marta"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <div className="mt-12">
             <div className="flex items-center mb-6">
               <h3 className="text-xl font-bold text-gray-800">Conversas Bate-bola</h3>
@@ -131,7 +139,7 @@ export const Noticias = () => {
                 Entre para Publicar
               </button>
             </div>
-            
+
             <p className="text-center text-gray-500 italic mt-6 text-2xl underline">
               A notícia ainda não há comentários
             </p>
