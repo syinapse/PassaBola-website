@@ -8,8 +8,8 @@ export const SessaoJogadores = () => {
   return (
     <div>
       <Header1 />
-      <div className="bg-gray-100 min-h-screen py-8 px-4 font-sans">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="bg-gray-100 min-h-screen py-8 px-4 font-sans ">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 ">
           <div className="col-span-1 space-y-6">
 
             <div className="bg-white rounded-xl shadow-sm h-fit">
@@ -39,15 +39,15 @@ export const SessaoJogadores = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-gray-700">
                   <FaFutbol className="text-purple-600 text-xl" />
-                  <span><strong className="text-black">19</strong> Gols Marcados</span>
+                  <span><strong className="text-purple-600 text-xl">19</strong> Gols Marcados</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-700">
                   <FaTrophy className="text-purple-600 text-xl" />
-                  <span><strong className="text-black">03</strong> Partidas Jogadas</span>
+                  <span><strong className="text-purple-600 text-xl">03</strong> Partidas Jogadas</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-700">
                   <FaRegClock className="text-purple-600 text-xl" />
-                  <span><strong className="text-black">60</strong> Minutos em campo</span>
+                  <span><strong className="text-purple-600 text-xl">60</strong> Minutos em campo</span>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ export const SessaoJogadores = () => {
             </div>
 
             <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center space-x-4 mb-4">
+              <div className="flex items-center space-x-2 mb-4">
                 <img src="....." alt="Passa a Bola" className="w-12 h-12 rounded-full" />
                 <div>
                   <h3 className="font-bold">Passa a Bola</h3>

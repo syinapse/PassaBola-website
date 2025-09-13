@@ -1,39 +1,53 @@
 import React from 'react';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
+import news1 from "../assets/news1.png";
+import news2 from "../assets/news2.png";
+import news3 from "../assets/news3.png";
+import Frame13 from "../assets/Frame13.png";
+import Frame14 from "../assets/Frame14.png";
+import camila from "../assets/camila.png";
+import manchete from "../assets/manchete.png";
+import profile from "../assets/profile.png";
+import emoji from "../assets/emoji.png";
+
 
 
 export const Noticias = () => {
   return (
     <div>
       <Header1 />
-      <section className='bg-blue-500 text-white flex flex-col items-center justify-center py-24 px-4'>
+      <section
+        className="bg-cover bg-center text-white flex flex-col items-center justify-center py-40 px-4"
+        style={{ backgroundImage: `url(${manchete})` }}
+      >
         <div className="flex flex-col items-center space-y-4">
-          <button className='flex items-center justify-center w-20 h-20 rounded-full bg-white transition-transform transform hover:scale-110'>
-
+          <button className="flex items-center justify-center w-22 h-22 rounded-full bg-white transition-transform transform hover:scale-110">
           </button>
-          <p className='font-bold text-lg'>Assista a Matéria</p>
+          <p className="font-bold text-lg">Assista a Matéria</p>
         </div>
       </section>
+
 
       <div className="bg-white rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
         <div className="flex items-center justify-center space-x-8">
           <div className="flex flex-col items-center">
             <img
-              src="https://placehold.co/48x48/0055ff/ffffff?text=BRA"
+              src={Frame13}
               alt="Brazil Flag"
-              className="h-12 w-12 rounded-full mb-1"
             />
             <p className="text-sm font-bold"></p>
           </div>
-          <span className="text-5xl font-bold text-gray-800">0 x 1</span>
+          <div className="flex items-center justify-center space-x-2 text-5xl font-bold text-gray-800">
+            <span>0</span>
+            <span>x</span>
+            <span>1</span>
+          </div>
           <div className="flex flex-col items-center">
             <img
-              src="https://placehold.co/48x48/ff0000/ffffff?text=EUA"
+              src={Frame14}
               alt="USA Flag"
-              className="h-12 w-12 rounded-full mb-1"
             />
-            <p className="text-sm font-bold">USA</p>
           </div>
         </div>
       </div>
@@ -41,9 +55,9 @@ export const Noticias = () => {
       <p className="text-2xl font-bold text-gray-700 mt-4 text-center">Encerrado</p>
 
       <div className="font-sans min-h-screen py-10 px-4">
-        <div className="max-w-3xl mx-auto bg-white p-6 md:p-12 rounded-lg">
+        <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg">
           <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight md:leading-tight text-left">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-left">
               Brasil luta, mas é <br className="hidden md:inline" />
               derrotado na final contra <br className="hidden md:inline" />
               os EUA
@@ -55,13 +69,19 @@ export const Noticias = () => {
 
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm text-gray-500 mt-8 mb-12">
             <div class="flex items-center mb-2 sm:mb-0 space-x-2">
-              <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+              <img
+                src={camila}
+                alt="Foto do autor"
+                class="w-10 h-10 rounded-full object-cover"
+              />
               <p class="font-medium">Escrito por <span class="text-gray-800">Camila Duarte</span></p>
             </div>
             <p class="text-right">
               Publicado em <br /> 11/08/24 - 14:35
             </p>
           </div>
+                              <hr className="my-12 border-t-2 border-gray-300" />
+
 
           <div className="text-lg leading-relaxed text-gray-700 font-serif">
             <p className="mb-6">
@@ -77,7 +97,7 @@ export const Noticias = () => {
             </p>
           </div>
 
-          <hr className="my-12 border-t border-gray-200" />
+                    <hr className="my-12 border-t-2 border-gray-300" />
 
           <div className="flex items-center text-xl font-bold text-gray-800">
             <span className="mr-2 text-2xl"></span>
@@ -85,30 +105,32 @@ export const Noticias = () => {
           </div>
           <br /><br />
           <div className="flex flex-col items-center justify-center p-4">
-            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-md w-full">
               <img
-                src="....."
+                src={news1}
                 alt="Corinthians feminino"
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-md w-full">
               <img
-                src="..."
+                src={news2}
                 alt="Brasil x EUA"
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-sm w-full">
+            <div className="rounded-xl overflow-hidden h-40 shadow-md mb-8 max-w-md w-full">
               <img
-                src="...."
+                src={news3}
                 alt="Arthur Elias e Marta"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
+                    <hr className="my-12 border-t-2 border-gray-300" />
+
           <div className="mt-12">
             <div className="flex items-center mb-6">
               <h3 className="text-xl font-bold text-gray-800">Conversas Bate-bola</h3>
@@ -116,14 +138,24 @@ export const Noticias = () => {
 
             <div className="flex flex-col items-end space-y-4">
               <div className="flex items-center w-full space-x-4">
-                <div className="w-10 h-10 rounded-full bg-gray-300"></div>
+                <div className="w-10 h-10">
+                  <img
+                    src={profile}
+                    alt="Foto do autor"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div className="relative flex-grow">
                   <input
                     type="text"
                     placeholder="Digite seu comentário..."
-                    className="w-full pl-4 pr-10 py-3 rounded-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
+                    className="w-full pl-4 py-3 rounded-md bg-gray-100 border-2 border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl cursor-pointer">O</span>
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl w-6 h-6 cursor-pointer"><img
+                    src={emoji}
+                    alt="Foto do autor"
+                    className="w-full h-full object-cover"
+                  /></span>
                 </div>
               </div>
 
@@ -132,7 +164,7 @@ export const Noticias = () => {
               </button>
             </div>
 
-            <p className="text-center text-gray-500 italic mt-6 text-2xl underline">
+            <p className="text-center text-black italic mt-20 mb-12 text-3xl underline">
               A notícia ainda não há comentários
             </p>
           </div>
