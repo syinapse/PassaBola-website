@@ -7,6 +7,7 @@ import { Noticias } from './pages/Noticias'
 import { CadatroNova } from './pages/CadatroNova'
 import { Login } from './pages/Login'
 import { SessaoJogadores } from './pages/SessaoJogadores'
+import { Loja } from './pages/Loja'
 
 
 export const AppRouter = () => {
@@ -19,6 +20,7 @@ export const AppRouter = () => {
     <Route path='/cadastro' element={<CadatroNova/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/jogadores' element={<SessaoJogadores/>}/>
+    <Route path='/loja' element={<Loja/>}/>
 
 
     </Routes>
