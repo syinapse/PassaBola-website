@@ -3,6 +3,8 @@ import { ButtonCadastro } from './ui/ButtonCadastro'
 import { useNavigate } from 'react-router-dom'
 
 import logo from '../assets/logos/LogoPassaabola.svg'
+import search from '../assets/icons/BasicSearch.svg'
+
 export const Header1 = () => {
   const handleClick = () => {
     navigate('/cadastro')
@@ -27,8 +29,8 @@ const navigate = useNavigate()
 
 
       <div className="flex items-center gap-2 text-white">
-        <span>O</span>
-        <ButtonCadastro onClick={handleClick} />
+ <img src={search} alt="Logo" className="w-14 h-7 object-contain cursor-pointer" />
+        <ButtonCadastro c onClick={handleClick} />
       </div>
     </header>
   )
