@@ -37,7 +37,13 @@ export const Loja = () => {
       </button>
     </div>
   </section>
-  <section className='flex w-full justify-around items-center'>
+  <section className='flex py-8 w-full justify-around items-center'>
+    <h2>CARD</h2>
+    <h2>CARD</h2>
+    <h2>CARD</h2>
+  </section>
+  <h2>Nosso Catálogo</h2>
+  <section className='flex justify-around w-full'>
     <h2>CARD</h2>
     <h2>CARD</h2>
     <h2>CARD</h2>
