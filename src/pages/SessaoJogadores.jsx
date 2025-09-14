@@ -15,12 +15,10 @@ export const SessaoJogadores = () => {
   return (
     <div>
       <Header1 />
-      <div className="bg-gray-100 min-h-screen py-8 px-4 font-sans">
+      <div className="bg-background min-h-screen py-8 px-4 font-sans">
         <div className="container mx-auto flex flex-col md:flex-row gap-6">
 
-          {/* COLUNA ESQUERDA */}
           <div className="flex flex-col space-y-6 w-full md:w-1/4">
-            {/* Card Perfil */}
             <div className="bg-white rounded-xl shadow-sm h-fit">
               <div className="relative">
                 <img
@@ -46,7 +44,6 @@ export const SessaoJogadores = () => {
               </div>
             </div>
 
-            {/* Card Estatísticas */}
             <div className="bg-white rounded-xl shadow-sm p-6 h-fit">
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-gray-700">
@@ -71,9 +68,7 @@ export const SessaoJogadores = () => {
             </div>
           </div>
 
-          {/* COLUNA DO MEIO */}
           <div className="flex flex-col space-y-6 w-full md:w-2/5">
-            {/* Post Aurora FC */}
             <div className="bg-white rounded-xl shadow-sm p-6">
               <div className="flex items-center space-x-4 mb-4">
                 <img src={logo} alt="Aurora FC" className="w-12 h-12 rounded-full" />
@@ -106,7 +101,6 @@ export const SessaoJogadores = () => {
               </div>
             </div>
 
-            {/* Post Passa a Bola */}
             <div className="bg-white rounded-xl shadow-sm p-6">
               <div className="flex items-center space-x-2 mb-4">
                 <img src="....." alt="Passa a Bola" className="w-12 h-12 rounded-full" />
@@ -130,7 +124,6 @@ export const SessaoJogadores = () => {
             </div>
           </div>
 
-          {/* COLUNA DIREITA */}
           <div className="flex flex-col space-y-6 w-full md:w-1/4">
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="font-bold text-lg mb-4">Últimas peneiras abertas</h3>

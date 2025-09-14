@@ -15,7 +15,7 @@ import emoji from "../assets/emoji.png";
 
 export const Noticias = () => {
   return (
-    <div>
+    <div className='bg-background'>
       <Header1 />
       <section
         className="bg-cover bg-center text-white flex flex-col items-center justify-center py-40 px-4"
@@ -29,7 +29,7 @@ export const Noticias = () => {
       </section>
 
 
-      <div className="bg-white rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
+      <div className="bg-background rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
         <div className="flex items-center justify-center space-x-8">
           <div className="flex flex-col items-center">
             <img
@@ -55,7 +55,7 @@ export const Noticias = () => {
       <p className="text-2xl font-bold text-gray-700 mt-4 text-center">Encerrado</p>
 
       <div className="font-sans min-h-screen py-10 px-4">
-        <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg">
+        <div className="max-w-3xl mx-auto bg-background p-6 rounded-lg">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-left">
               Brasil luta, mas é <br className="hidden md:inline" />
@@ -149,7 +149,7 @@ export const Noticias = () => {
                   <input
                     type="text"
                     placeholder="Digite seu comentário..."
-                    className="w-full pl-4 py-3 rounded-md bg-gray-100 border-2 border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
+                    className="w-full pl-4 py-3 rounded-md bg-background border-2 border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
                   />
                   <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl w-6 h-6 cursor-pointer"><img
                     src={emoji}

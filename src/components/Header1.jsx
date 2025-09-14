@@ -14,7 +14,7 @@ export const Header1 = () => {
   }
 
   return (
-    <header className="flex justify-between items-center p-3 sm:p-4 md:p-6 bg-secondary-2">
+<header className="flex justify-between items-center p-3 sm:p-4 md:p-4 bg-secondary-2 relative">
       <div className="flex items-center gap-6 md:gap-20 text-amber-50 font-bold">
         <img src={logo} alt="Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain" />
 
