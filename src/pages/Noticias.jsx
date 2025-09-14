@@ -10,6 +10,8 @@ import camila from "../assets/camila.png";
 import manchete from "../assets/manchete.png";
 import profile from "../assets/profile.png";
 import emoji from "../assets/emoji.png";
+import player from "../assets/Player.png";
+
 
 
 
@@ -22,11 +24,17 @@ export const Noticias = () => {
         style={{ backgroundImage: `url(${manchete})` }}
       >
         <div className="flex flex-col items-center space-y-4">
-          <button className="flex items-center justify-center w-22 h-22 rounded-full bg-white transition-transform transform hover:scale-110">
+          <button className="flex items-center justify-center rounded-full  transition-transform transform hover:scale-110">
+            <img
+              src={player} 
+              alt="Play"
+              className="w-20 h-20" 
+            />
           </button>
           <p className="font-bold text-lg">Assista a Matéria</p>
         </div>
       </section>
+
 
 
       <div className="bg-background rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
@@ -80,7 +88,7 @@ export const Noticias = () => {
               Publicado em <br /> 11/08/24 - 14:35
             </p>
           </div>
-                              <hr className="my-12 border-t-2 border-gray-300" />
+          <hr className="my-12 border-t-2 border-gray-300" />
 
 
           <div className="text-lg leading-relaxed text-gray-700 font-serif">
@@ -97,7 +105,7 @@ export const Noticias = () => {
             </p>
           </div>
 
-                    <hr className="my-12 border-t-2 border-gray-300" />
+          <hr className="my-12 border-t-2 border-gray-300" />
 
           <div className="flex items-center text-xl font-bold text-gray-800">
             <span className="mr-2 text-2xl"></span>
@@ -129,7 +137,7 @@ export const Noticias = () => {
               />
             </div>
           </div>
-                    <hr className="my-12 border-t-2 border-gray-300" />
+          <hr className="my-12 border-t-2 border-gray-300" />
 
           <div className="mt-12">
             <div className="flex items-center mb-6">

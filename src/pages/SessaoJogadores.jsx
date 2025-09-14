@@ -11,6 +11,8 @@ import video2 from "../assets/video2.png";
 import like from '../assets/icons/like.png';
 import comentarios from '../assets/icons/cometarios.png';
 import compartilhar from '../assets/icons/compartilhar.png';
+import canal from '../assets/canal.png';
+
 
 
 
@@ -119,7 +121,7 @@ export const SessaoJogadores = () => {
 
             <div className="bg-white rounded-xl shadow-sm p-6">
               <div className="flex items-center space-x-2 mb-4">
-                <img src="....." alt="Passa a Bola" className="w-12 h-12 rounded-full" />
+                <img src={canal} alt="Passa a Bola" className="w-12 h-12 rounded-full" />
                 <div>
                   <h3 className="font-bold">Passa a Bola</h3>
                   <p className="text-md text-gray-500">30 minutos atrás</p>
