@@ -8,6 +8,8 @@ import { CadatroNova } from './pages/CadatroNova'
 import { Login } from './pages/Login'
 import { SessaoJogadores } from './pages/SessaoJogadores'
 import { SessaoClubes } from './pages/SessaoClubes'
+import { MapaQuadras } from './pages/MapaQuadras'
+
 
 import { Loja } from './pages/Loja'
 
@@ -23,7 +25,9 @@ export const AppRouter = () => {
     <Route path='/login' element={<Login/>}/>
     <Route path='/jogadores' element={<SessaoJogadores/>}/>
     <Route path='/clubes' element={<SessaoClubes/>}/>
+    <Route path='/mapaquadras' element={<MapaQuadras/>}/>
     <Route path='/loja' element={<Loja/>}/>
+
 
 
     </Routes>
