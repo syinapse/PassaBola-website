@@ -10,26 +10,34 @@ import camila from "../assets/camila.png";
 import manchete from "../assets/manchete.png";
 import profile from "../assets/profile.png";
 import emoji from "../assets/emoji.png";
+import player from "../assets/Player.png";
+
 
 
 
 export const Noticias = () => {
   return (
-    <div>
+    <div className='bg-background'>
       <Header1 />
       <section
         className="bg-cover bg-center text-white flex flex-col items-center justify-center py-40 px-4"
         style={{ backgroundImage: `url(${manchete})` }}
       >
         <div className="flex flex-col items-center space-y-4">
-          <button className="flex items-center justify-center w-22 h-22 rounded-full bg-white transition-transform transform hover:scale-110">
+          <button className="flex items-center justify-center rounded-full  transition-transform transform hover:scale-110">
+            <img
+              src={player} 
+              alt="Play"
+              className="w-20 h-20" 
+            />
           </button>
           <p className="font-bold text-lg">Assista a Matéria</p>
         </div>
       </section>
 
 
-      <div className="bg-white rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
+
+      <div className="bg-background rounded-2xl shadow-lg p-6 w-80 h-40 mx-auto mt-8 flex flex-col items-center justify-center font-sans">
         <div className="flex items-center justify-center space-x-8">
           <div className="flex flex-col items-center">
             <img
@@ -55,7 +63,7 @@ export const Noticias = () => {
       <p className="text-2xl font-bold text-gray-700 mt-4 text-center">Encerrado</p>
 
       <div className="font-sans min-h-screen py-10 px-4">
-        <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg">
+        <div className="max-w-3xl mx-auto bg-background p-6 rounded-lg">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-left">
               Brasil luta, mas é <br className="hidden md:inline" />
@@ -80,7 +88,7 @@ export const Noticias = () => {
               Publicado em <br /> 11/08/24 - 14:35
             </p>
           </div>
-                              <hr className="my-12 border-t-2 border-gray-300" />
+          <hr className="my-12 border-t-2 border-gray-300" />
 
 
           <div className="text-lg leading-relaxed text-gray-700 font-serif">
@@ -97,7 +105,7 @@ export const Noticias = () => {
             </p>
           </div>
 
-                    <hr className="my-12 border-t-2 border-gray-300" />
+          <hr className="my-12 border-t-2 border-gray-300" />
 
           <div className="flex items-center text-xl font-bold text-gray-800">
             <span className="mr-2 text-2xl"></span>
@@ -129,7 +137,7 @@ export const Noticias = () => {
               />
             </div>
           </div>
-                    <hr className="my-12 border-t-2 border-gray-300" />
+          <hr className="my-12 border-t-2 border-gray-300" />
 
           <div className="mt-12">
             <div className="flex items-center mb-6">
@@ -149,7 +157,7 @@ export const Noticias = () => {
                   <input
                     type="text"
                     placeholder="Digite seu comentário..."
-                    className="w-full pl-4 py-3 rounded-md bg-gray-100 border-2 border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
+                    className="w-full pl-4 py-3 rounded-md bg-background border-2 border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
                   />
                   <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl w-6 h-6 cursor-pointer"><img
                     src={emoji}
