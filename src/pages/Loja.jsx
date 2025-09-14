@@ -2,6 +2,8 @@ import React from 'react'
 import { Header1 } from '../components/Header1'
 import { CardProduto } from '../components/CardProduto'
 import { Footer } from '../components/Footer'
+import camisetaFlamengo from '../assets/camistaFlamengo.png'
+
 
 export const Loja = () => {
   return (
@@ -19,7 +21,7 @@ export const Loja = () => {
   <section className="w-full max-w-6xl px-6">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-<CardProduto titulo={"Camiseta 1 Flamengo Fem"} preco={'R$ 399,99'}/>
+<CardProduto titulo={"Camiseta 1 Flamengo Fem"} img={camisetaFlamengo} preco={'R$ 399,99'}/>
 <CardProduto/>
 <CardProduto/>
 <CardProduto/>
