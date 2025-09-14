@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaHeart, FaShareAlt, FaComment, FaTrophy, FaFutbol, FaRegClock } from 'react-icons/fa';
-import { MdOutlineLocationOn } from 'react-icons/md';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
 import logo from "../assets/logo.png";
@@ -9,6 +8,11 @@ import fundo from "../assets/fundo.png";
 import luana from "../assets/luana.png";
 import video1 from "../assets/video1.png";
 import video2 from "../assets/video2.png";
+import like from '../assets/icons/like.png';
+import comentarios from '../assets/icons/cometarios.png';
+import compartilhar from '../assets/icons/compartilhar.png';
+
+
 
 
 export const SessaoJogadores = () => {
@@ -78,7 +82,7 @@ export const SessaoJogadores = () => {
                 </div>
               </div>
               <p className="text-gray-700 mb-4">
-🎯 Vem aí mais uma chance de mostrar seu talento!A equipe Meninas da Aurora FC está promovendo uma peneira para jogadoras de 14 a 18 anos em São Paulo. As vagas são limitadas, e a oportunidade é incrível!              </p>
+                🎯 Vem aí mais uma chance de mostrar seu talento!A equipe Meninas da Aurora FC está promovendo uma peneira para jogadoras de 14 a 18 anos em São Paulo. As vagas são limitadas, e a oportunidade é incrível!              </p>
               <div className="flex items-center text-md text-black">
                 <span>📍 Local: Arena Zona Sul</span>
               </div>
@@ -94,10 +98,22 @@ export const SessaoJogadores = () => {
 
 
               <img src={peneira} alt="Peneira Aurora FC" className="w-full h-auto rounded-xl mb-4" />
-              <div className="flex text-md text-gray-500 space-x-4">
-                <button className="flex items-center space-x-1 cursor-pointer"><FaHeart /><span>Gostei</span></button>
-                <button className="flex items-center space-x-1 cursor-pointer"><FaShareAlt /><span>Compartilhar</span></button>
-                <button className="flex items-center space-x-1 cursor-pointer"><FaComment /><span>Comentários</span></button>
+              <div className="flex text-md text-gray-500 mt-4 space-x-4">
+                <button className="flex items-center space-x-1 cursor-pointer">
+                  <img src={like} alt="Curtir" className="" />
+                  <span className=''>Gostei</span>
+                </button>
+
+                <button className="flex items-center space-x-1 cursor-pointer">
+                  <img src={compartilhar} alt="Compartilhar" className="" />
+                  <span>Compartilhar</span>
+                </button>
+
+                <button className="flex items-center space-x-1 cursor-pointer">
+                  <img src={comentarios} alt="Comentários" className="" />
+                  <span>Comentários</span>
+                </button>
+
               </div>
             </div>
 
@@ -117,9 +133,21 @@ export const SessaoJogadores = () => {
                 <img src={video2} alt="Aira Bonfim" className="w-full h-auto rounded-xl" />
               </div>
               <div className="flex text-md text-gray-500 mt-4 space-x-4">
-                <button className="flex items-center space-x-1 cursor-pointer"><FaHeart /><span>Gostei</span></button>
-                <button className="flex items-center space-x-1 cursor-pointer"><FaShareAlt /><span>Compartilhar</span></button>
-                <button className="flex items-center space-x-1 cursor-pointer"><FaComment /><span>Comentários</span></button>
+                <button className="flex items-center space-x-1 cursor-pointer">
+                  <img src={like} alt="Curtir" className="" />
+                  <span className=''>Gostei</span>
+                </button>
+
+                <button className="flex items-center space-x-1 cursor-pointer">
+                  <img src={compartilhar} alt="Compartilhar" className="" />
+                  <span>Compartilhar</span>
+                </button>
+
+                <button className="flex items-center space-x-1 cursor-pointer">
+                  <img src={comentarios} alt="Comentários" className="" />
+                  <span>Comentários</span>
+                </button>
+
               </div>
             </div>
           </div>
@@ -128,10 +156,10 @@ export const SessaoJogadores = () => {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="font-bold text-lg mb-4">Últimas peneiras abertas</h3>
               <ul className="space-y-3">
-                  <li className="flex justify-between items-center text-md text-gray-700">
-                    <span>Peneira Clube 1</span>
-                    <span className="text-purple-600 font-medium text-lg">há 2 dias</span>
-                  </li>
+                <li className="flex justify-between items-center text-md text-gray-700">
+                  <span>Peneira Clube 1</span>
+                  <span className="text-purple-600 font-medium text-lg">há 2 dias</span>
+                </li>
                 <li className="flex justify-between items-center text-md text-gray-700">
                   <span>Peneira Clube 2</span>
                   <span className="text-purple-600 font-medium text-lg">há 7 dias</span>
