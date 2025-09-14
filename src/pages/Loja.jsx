@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header1 } from '../components/Header1'
-import { CardProduto } from '../components/ui/CardProduto'
+import { CardProduto } from '../components/CardProduto'
+import { Footer } from '../components/Footer'
 
 export const Loja = () => {
   return (
@@ -10,7 +11,7 @@ export const Loja = () => {
     <h2 className='text-4xl text-white'>3 CAMISETAS PASSE A BOLA</h2>
     <p className='text-3xl text-primary-2'>POR R$299,90</p>
 </section>
-<div className="flex flex-col items-center justify-center py-12 bg-background">
+<div className="flex flex-col items-center gap-4 justify-center py-12 bg-background">
 
   <h2 className="text-3xl mb-8">Mais Vendidos</h2>
 
@@ -36,8 +37,13 @@ export const Loja = () => {
       </button>
     </div>
   </section>
+  <section className='flex w-full justify-around items-center'>
+    <h2>CARD</h2>
+    <h2>CARD</h2>
+    <h2>CARD</h2>
+  </section>
 </div>
-
+<Footer/>
     </div>
   )
 }
