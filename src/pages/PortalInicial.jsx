@@ -30,13 +30,13 @@ export const PortalInicial = () => {
         
         {/* Container para o conteúdo do banner */}
         <div className="relative z-10">
-          <h2 className='text-6xl text-white leading-tight mb-8 font-quando'> {/* Usando 'font-quando' aqui */}
+          <h2 className='text-7xl text-white leading-tight mb-8 font-quando'> {/* Usando 'font-quando' aqui */}
             Brasil luta, mas é <br />
             derrotado na final <br />
             contra os EUA
           </h2>
           {/* BOTÃO CORRIGIDO AQUI */}
-          <button className='border-purple-500 border-2 rounded-full px-12 py-3 text-purple-500 font-semibold text-lg transition-opacity duration-300 hover:opacity-80'>
+          <button className='border-purple-500 border-3 rounded-full px-17 py-3 text-purple-500 font-semibold text-2xl transition-opacity duration-300 hover:opacity-80'>
             Saiba Mais
           </button>
         </div>
