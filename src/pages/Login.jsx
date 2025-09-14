@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Header3 } from '../components/Header3'
-
+import logoGoogle from '../assets/logos/googleLogo.svg'
 export const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -10,6 +10,7 @@ export const Login = () => {
     { username: "leonardokina18@gmail.com", password: "1234" },
     { username: "mariaplays@gmail.com", password: "abcd" }
   ]
+  
  const handleLogin = () => {
     const user = users.find(
       (u) => u.username === username && u.password === password
@@ -36,7 +37,7 @@ export const Login = () => {
               {/*lado direito da tela de ligin*/}
         <div className='flex flex-col items-start ml-8 md:ml-20 lg:ml-40 px-8 w-full gap-3'>
               <h2 className='text-3xl'>Login <span className='text-text-accent'>PASSA A BOLA</span></h2>
-              <button className='bg-white p-2 rounded-2xl border-1 border-gray-300 font-semibold cursor-pointer'>G Entre com Google</button>
+              <button className='bg-white p-2 rounded-2xl border-1 flex gap-1 border-gray-300 font-semibold cursor-pointer'><img src={logoGoogle} className="w-6 h-6 object-contain"  alt="google" /> Entre com Google</button>
           <hr className="border-t border-gray-400 w-2xl my-4" />
             </div>
 <div className="flex flex-col gap-4 w-full max-w-md">

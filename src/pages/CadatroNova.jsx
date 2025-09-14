@@ -2,14 +2,14 @@ import React from 'react'
 import { Header1 } from '../components/Header1'
 import { Header2 } from '../components/Header2'
 import { useNavigate } from 'react-router-dom'
-
+import logo from '../assets/logos/LogoPassaabola.svg'
 export const CadatroNova = () => {
     const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header2/>
       <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 px-4">
-        <h2 className="text-4xl font-bold">LOGO</h2>
+         <img src={logo} alt="Logo" className="w-36 h-36 object-contain" />
         <h2 className="text-4xl font-bold">
           Cadastro no <span className="text-text-accent">PASSA A BOLA</span>
         </h2>
