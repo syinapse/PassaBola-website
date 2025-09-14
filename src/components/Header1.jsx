@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ButtonCadastro } from './ui/ButtonCadastro'
 import { useNavigate } from 'react-router-dom'
 
@@ -6,32 +6,52 @@ import logo from '../assets/logos/LogoPassaabola.svg'
 import search from '../assets/icons/BasicSearch.svg'
 
 export const Header1 = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
+
   const handleClick = () => {
     navigate('/cadastro')
   }
-const navigate = useNavigate()
+
   return (
-    <header className="flex justify-between items-center p-3 bg-secondary-2">
+    <header className="flex justify-between items-center p-3 sm:p-4 md:p-6 bg-secondary-2">
+      <div className="flex items-center gap-6 md:gap-20 text-amber-50 font-bold">
+        <img src={logo} alt="Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain" />
 
-      <div className="flex items-center gap-20   text-amber-50 font-bold">
-     <img src={logo} alt="Logo" className="w-16 h-16 object-contain" />
-
-
-        <nav>
-          <ul className="flex gap-20  ">
-            <li><button onClick={() => navigate("/noticias")}>Notícas</button></li>
+        <nav className="hidden md:block">
+          <ul className="flex gap-6 md:gap-12 lg:gap-20">
+            <li><button onClick={() => navigate("/noticias")}>Notícias</button></li>
             <li><button onClick={() => navigate("/loja")}>Loja</button></li>
             <li><button onClick={() => navigate("/conexões")}>Conexões</button></li>
             <li><button onClick={() => navigate("/sobre")}>Sobre</button></li>
           </ul>
         </nav>
+
+        <button 
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-white text-2xl"
+        >
+          ☰
+        </button>
       </div>
 
-
-      <div className="flex items-center gap-2 text-white">
- <img src={search} alt="Logo" className="w-14 h-7 object-contain cursor-pointer" />
-        <ButtonCadastro c onClick={handleClick} />
+      <div className="flex items-center gap-2 sm:gap-4 text-white">
+        <img 
+          src={search} 
+          alt="Buscar" 
+          className="w-6 h-6 sm:w-7 sm:h-7 object-contain cursor-pointer" 
+        />
+        <ButtonCadastro onClick={handleClick} />
       </div>
+
+      {menuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-secondary-2 text-white flex flex-col items-center py-4 space-y-4 md:hidden z-50">
+          <button onClick={() => navigate("/noticias")}>Notícias</button>
+          <button onClick={() => navigate("/loja")}>Loja</button>
+          <button onClick={() => navigate("/conexões")}>Conexões</button>
+          <button onClick={() => navigate("/sobre")}>Sobre</button>
+        </div>
+      )}
     </header>
   )
 }
