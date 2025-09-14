@@ -1,15 +1,15 @@
 import React from 'react';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
+import logoCamp1 from '../assets/PaginaPrincipal/Ellipse1.png';
+import logoCamp2 from '../assets/PaginaPrincipal/Ellipse2.png';
+import logoCamp3 from '../assets/PaginaPrincipal/Ellipse3.png';
+import logoCamp4 from '../assets/PaginaPrincipal/Ellipse4.png';
+import logoCamp5 from '../assets/PaginaPrincipal/Ellipse5.png';
 
-// Sugestão: Componentes em React geralmente usam PascalCase.
-// Se "Header1" for o header principal, talvez renomear para "MainHeader" ou simplesmente "Header"
-// possa deixar mais claro no futuro.
 
 export const PortalInicial = () => {
   return (
-    // Sugestão: Usar um Fragment (<>) em vez de uma <div> desnecessária como contêiner principal.
-    // Isso evita adicionar um nó extra na sua árvore DOM.
     <>
       <Header1 />
 
@@ -30,11 +30,11 @@ export const PortalInicial = () => {
         <h2 className='mt-6 font-medium text-2xl text-text'>Campeonatos</h2>
         <div className='flex gap-10 py-10'>
           {/* Placeholders para os cards de campeonato */}
-          <span>A</span>
-          <span>A</span>
-          <span>A</span>
-          <span>A</span>
-          <span>A</span>
+          <img src={logoCamp4} alt="Logo Campeonato1" className="h-24 w-24 object-contain" />
+          <img src={logoCamp2} alt="Logo Campeonato2" className="h-24 w-24 object-contain" />
+          <img src={logoCamp1} alt="Logo Campeonato3" className="h-24 w-24 object-contain" />
+          <img src={logoCamp3} alt="Logo Campeonato4" className="h-24 w-24 object-contain" />
+          <img src={logoCamp5} alt="Logo Campeonato5" className="h-24 w-24 object-contain" />
         </div>
       </section>
 
