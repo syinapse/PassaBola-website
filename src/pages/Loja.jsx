@@ -7,7 +7,7 @@ import camisetaFlamengo from '../assets/camistaFlamengo.png'
 
 export const Loja = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <Header1/>
 <section className="bg-gray-700 flex flex-col gap-1 justify-center items-center text-center py-20">
     <h2 className='text-4xl text-white'>3 CAMISETAS PASSE A BOLA</h2>
