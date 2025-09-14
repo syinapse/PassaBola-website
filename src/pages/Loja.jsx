@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header1 } from '../components/Header1'
+import { CardProduto } from '../components/ui/CardProduto'
 
 export const Loja = () => {
   return (
@@ -17,13 +18,14 @@ export const Loja = () => {
   <section className="w-full max-w-6xl px-6">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-<div className="rounded-xl shadow-xl shadow-gray-400/50 p-4 flex flex-col items-center">
-<h2>PRODUTAOOO</h2>
-  <div className="w-full border-t border-gray-400 my-3"></div>
-  <p className=" font-medium text-md">Camiseta 1 Flamengo Fem</p>
-  <p className="text-primary font-bold text-lg">R$ 399,99</p>
-</div>
-
+<CardProduto titulo={"Camiseta 1 Flamengo Fem"} preco={'R$ 399,99'}/>
+<CardProduto/>
+<CardProduto/>
+<CardProduto/>
+<CardProduto/>
+<CardProduto/>
+<CardProduto/>
+<CardProduto/>
 
     </div>
 
