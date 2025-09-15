@@ -31,7 +31,7 @@ export const Noticias = () => {
               className="w-20 h-20" 
             />
           </button>
-          <p className="font-bold text-lg">Assista a Matéria</p>
+          <p className="font-quando text-2xl">Assista a Matéria</p>
         </div>
       </section>
 
@@ -60,12 +60,12 @@ export const Noticias = () => {
         </div>
       </div>
 
-      <p className="text-2xl font-bold text-gray-700 mt-4 text-center">Encerrado</p>
+      <p className="text-2xl font-bold text-gray-800 mt-4 text-center">Encerrado</p>
 
       <div className="font-sans min-h-screen py-10 px-4">
         <div className="max-w-3xl mx-auto bg-background p-6 rounded-lg">
           <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-left">
+            <h1 className="text-4xl md:text-5xl font-quando leading-tight text-left">
               Brasil luta, mas é <br className="hidden md:inline" />
               derrotado na final contra <br className="hidden md:inline" />
               os EUA
@@ -82,7 +82,7 @@ export const Noticias = () => {
                 alt="Foto do autor"
                 class="w-10 h-10 rounded-full object-cover"
               />
-              <p class="font-medium">Escrito por <span class="text-gray-800">Camila Duarte</span></p>
+              <p class="text-md">Escrito por <span class="text-gray-800">Camila Duarte</span></p>
             </div>
             <p class="text-right">
               Publicado em <br /> 11/08/24 - 14:35
@@ -107,7 +107,7 @@ export const Noticias = () => {
 
           <hr className="my-12 border-t-2 border-gray-300" />
 
-          <div className="flex items-center text-xl font-bold text-gray-800">
+          <div className="flex items-center text-3xl font-quando text-gray-800">
             <span className="mr-2 text-2xl"></span>
             <h2>Mais sobre futebol</h2>
           </div>
@@ -141,7 +141,7 @@ export const Noticias = () => {
 
           <div className="mt-12">
             <div className="flex items-center mb-6">
-              <h3 className="text-xl font-bold text-gray-800">Conversas Bate-bola</h3>
+              <h3 className="text-gray-800 text-3xl font-quando">Conversas Bate-bola</h3>
             </div>
 
             <div className="flex flex-col items-end space-y-4">
