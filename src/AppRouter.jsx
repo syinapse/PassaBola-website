@@ -14,6 +14,8 @@ import { MapaQuadras } from './pages/MapaQuadras'
 import { Loja } from './pages/Loja'
 import { PassaABola } from './pages/PassaABola'
 import CadastroUsuario from './pages/CadastroUsuario'
+import CadastroClube from './pages/CadastroClube'
+
 
 
 export const AppRouter = () => {
@@ -31,6 +33,8 @@ export const AppRouter = () => {
     <Route path='/mapaquadras' element={<MapaQuadras/>}/>
     <Route path='/loja' element={<Loja/>}/>
   <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
+    <Route path='/cadastro-clube' element={<CadastroClube/>}/>
+
 
 
     </Routes>

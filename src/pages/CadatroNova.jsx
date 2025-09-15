@@ -19,13 +19,15 @@ export const CadatroNova = () => {
         </p>
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-4">
+            
+            <button className="px-12 py-3 rounded-xl bg-primary text-white font-bold hover:bg-secondary/90 transition"
+            onClick={() => navigate('/cadastro-clube')}>
+              Clube
+            </button>
             <button
               className="px-12 py-2 rounded-xl bg-secondary text-white font-bold hover:bg-secondary/90 transition"
               onClick={() => navigate('/cadastro-usuario')}
             >
-              Usuário
-            </button>
-            <button className="px-12 py-3 rounded-xl bg-secondary text-white font-bold hover:bg-secondary/90 transition">
               Usuário
             </button>
           </div>

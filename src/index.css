@@ -22,6 +22,35 @@
 .font-quando {
   font-family: 'Quando', serif;
 }
+<<<<<<< HEAD
 .font-oswald{
    font-family: "Oswald", sans-serif;
+=======
+
+
+
+
+/* BOLINHAS DO SLIDE SHOW */
+
+#inicio .swiper-pagination {
+  bottom: 30px !important; /* Aumente este valor para subir mais */
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #ffffff !important; 
+  opacity: 0.5 !important;
+  transition: all 0.3s ease !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-btn-accent, #E5599D) !important; 
+  opacity: 1 !important;
+>>>>>>> 58f840437da28ab41341fc9abb6183eb45d3a351
 }
