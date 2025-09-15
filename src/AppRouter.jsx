@@ -13,6 +13,7 @@ import { MapaQuadras } from './pages/MapaQuadras'
 
 import { Loja } from './pages/Loja'
 import { PassaABola } from './pages/PassaABola'
+import CadastroUsuario from './pages/CadastroUsuario'
 
 
 export const AppRouter = () => {
@@ -29,7 +30,7 @@ export const AppRouter = () => {
     <Route path='/clubes' element={<SessaoClubes/>}/>
     <Route path='/mapaquadras' element={<MapaQuadras/>}/>
     <Route path='/loja' element={<Loja/>}/>
-
+  <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
 
 
     </Routes>

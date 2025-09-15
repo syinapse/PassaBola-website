@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import { FaHeart, FaShareAlt, FaComment, FaTrophy, FaFutbol, FaRegClock } from 'react-icons/fa';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
-import logo from "../assets/logo.png";
-import peneira from "../assets/peneira.png";
-import fundo from "../assets/fundo.png";
-import luana from "../assets/luana.png";
-import video1 from "../assets/video1.png";
-import video2 from "../assets/video2.png";
+import logo from "../assets/noticias/logo.png";
+import peneira from "../assets/noticias/peneira.png";
+import fundo from "../assets/noticias/fundo.png";
+import luana from "../assets/noticias/luana.png";
+import video1 from "../assets/noticias/video1.png";
+import video2 from "../assets/noticias/video2.png";
 import like from '../assets/icons/like.png';
 import comentarios from '../assets/icons/cometarios.png';
 import compartilhar from '../assets/icons/compartilhar.png';
-import canal from '../assets/canal.png';
+import canal from '../assets/noticias/canal.png';
 import { AiOutlineClose } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md'; 
-import emoji from "../assets/emoji.png";
+import emoji from "../assets/noticias/emoji.png";
 
 export const SessaoJogadores = () => {
   const [showComments, setShowComments] = useState(false);

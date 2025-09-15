@@ -3,8 +3,8 @@ import { FaMapMarkerAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import { FunnelIcon } from '@heroicons/react/24/outline';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
-import Mapa from "../assets/Mapa.png";
-import peneira from "../assets/peneira.png";
+import Mapa from "../assets/noticias/Mapa.png";
+import peneira from "../assets/noticias/peneira.png";
 
 
 

@@ -3,14 +3,14 @@ import { FaHeart, FaShareAlt, FaComment, FaTrophy, FaFutbol, FaRegClock } from '
 import { MdOutlineLocationOn, MdPhoto, MdVideocam, MdInsertEmoticon, MdClose } from 'react-icons/md';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
-import logo from "../assets/logo.png";
-import peneira from "../assets/peneira.png";
-import fundo from "../assets/fundo.png";
-import luana from "../assets/luana.png";
-import video1 from "../assets/video1.png";
-import emoji from "../assets/emoji.png";
+import logo from "../assets/noticias/logo.png";
+import peneira from "../assets/noticias/peneira.png";
+import fundo from "../assets/noticias/fundo.png";
+import luana from "../assets/noticias/luana.png";
+import video1 from "../assets/noticias/video1.png";
+import emoji from "../assets/noticias/emoji.png";
 
-import video2 from "../assets/video2.png";
+import video2 from "../assets/noticias/video2.png";
 import like from '../assets/icons/like.png';
 import comentarios from '../assets/icons/cometarios.png';
 import compartilhar from '../assets/icons/compartilhar.png';
@@ -18,7 +18,7 @@ import feliz from '../assets/icons/feliz.png';
 import imagem from '../assets/icons/imagem.png';
 import video from '../assets/icons/video.png';
 import gif from '../assets/icons/gif.png';
-import canal from '../assets/canal.png';
+import canal from '../assets/noticias/canal.png';
 
 
 

@@ -1,16 +1,17 @@
 import React from 'react';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
-import news1 from "../assets/news1.png";
-import news2 from "../assets/news2.png";
-import news3 from "../assets/news3.png";
-import Frame13 from "../assets/Frame13.png";
-import Frame14 from "../assets/Frame14.png";
-import camila from "../assets/camila.png";
-import manchete from "../assets/manchete.png";
-import profile from "../assets/profile.png";
-import emoji from "../assets/emoji.png";
-import player from "../assets/Player.png";
+import news1 from "../assets/noticias/news1.png";
+import news2 from "../assets/noticias/news2.png";
+import news3 from "../assets/noticias/news3.png";
+import Frame13 from "../assets/noticias/Frame13.png";
+import Frame14 from "../assets/noticias/Frame14.png";
+import camila from "../assets/noticias/camila.png";
+import manchete from "../assets/noticias/manchete.png";
+import profile from "../assets/noticias/profile.png";
+import emoji from "../assets/noticias/emoji.png";
+import player from "../assets/noticias/Player.png";
+
 
 
 

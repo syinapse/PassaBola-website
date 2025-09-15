@@ -4,12 +4,12 @@ import { Header2 } from '../components/Header2'
 import { useNavigate } from 'react-router-dom'
 import logo from '../assets/logos/LogoPassaabola.svg'
 export const CadatroNova = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <Header2/>
+      <Header2 />
       <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 px-4">
-         <img src={logo} alt="Logo" className="w-36 h-36 object-contain" />
+        <img src={logo} alt="Logo" className="w-36 h-36 object-contain" />
         <h2 className="text-4xl font-bold">
           Cadastro no <span className="text-text-accent">PASSA A BOLA</span>
         </h2>
@@ -19,8 +19,11 @@ export const CadatroNova = () => {
         </p>
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-4">
-            <button className="px-12 py-2 rounded-xl font-bold bg-primary text-white hover:bg-primary/90 transition">
-              Clubes
+            <button
+              className="px-12 py-2 rounded-xl bg-secondary text-white font-bold hover:bg-secondary/90 transition"
+              onClick={() => navigate('/cadastro-usuario')}
+            >
+              Usuário
             </button>
             <button className="px-12 py-3 rounded-xl bg-secondary text-white font-bold hover:bg-secondary/90 transition">
               Usuário
@@ -29,8 +32,8 @@ export const CadatroNova = () => {
           <p className="text-gray-700 italic font-bold">
             Já possui uma conta?{' '}
             <span className="text-primary-2  font-semibold cursor-pointer ">
-             <button onClick={() => navigate('/login')}
-             className='underline'>Acesse o Login</button> 
+              <button onClick={() => navigate('/login')}
+                className='underline'>Acesse o Login</button>
             </span>
           </p>
         </div>
