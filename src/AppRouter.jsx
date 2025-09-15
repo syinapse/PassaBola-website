@@ -34,7 +34,7 @@ export const AppRouter = () => {
     <Route path='/clubes' element={<SessaoClubes/>}/>
     <Route path='/mapaquadras' element={<MapaQuadras/>}/>
     <Route path='/loja' element={<Loja/>}/>
-  <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
+    <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
     <Route path='/cadastro-clube' element={<CadastroClube/>}/>
 
 
