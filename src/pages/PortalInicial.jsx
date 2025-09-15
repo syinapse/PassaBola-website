@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../pages/Noticias';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
 import { NewsCard } from '../components/NewsCard';
@@ -42,10 +42,10 @@ export const PortalInicial = () => {
             <h2 className='text-7xl text-white leading-tight mb-8 font-quando'>
               Brasil luta, mas é <br />
               derrotado na final <br />
-              contra os EUA
+              contra os EUA      
             </h2>
             <Link 
-              to="/noticias" // Ajuste o link para o destino correto
+              to="../pages/Noticias" 
               className='inline-block border-purple-500 bg-transparent border-2 rounded-full px-12 py-3 text-purple-500 font-semibold text-xl transition-all duration-300 hover:bg-purple-500 hover:text-white'
             >
               Saiba Mais

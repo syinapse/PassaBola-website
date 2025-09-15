@@ -10,7 +10,7 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="bg-gray-100 py-20">
+    <section id="features" className="py-20">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
         {features.map((feature, index) => (
           <div key={index} className="flex flex-col items-center">
