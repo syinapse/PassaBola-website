@@ -2,8 +2,14 @@ import React from 'react'
 import { Header1 } from '../components/Header1'
 import { CardProduto } from '../components/CardProduto'
 import { Footer } from '../components/Footer'
-import camisetaFlamengo from '../assets/camistaFlamengo.png'
-
+import camisetaFlamengo from '../assets/products/camistaFlamengo.png'
+import camisetaArsenal from '../assets/products/Camiseta3ArsenalFem.png'
+import camisetaCruzeiro from '../assets/products/camisetaCruzeiro.png'
+import camisetaPassaABola from '../assets/products/camisetaPassaABola.png'
+import camisa3passaabola from '../assets/products/3camisapassaabola.png'
+import jaquetafeminina from '../assets/products/jaquetafeminina.png'
+import bola from '../assets/products/bola.png'
+import camisetatiro from '../assets/products/camisetatiro.png'
 
 export const Loja = () => {
   return (
@@ -22,13 +28,15 @@ export const Loja = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
 <CardProduto titulo={"Camiseta 1 Flamengo Fem"} img={camisetaFlamengo} preco={'R$ 399,99'}/>
-<CardProduto/>
-<CardProduto/>
-<CardProduto/>
-<CardProduto/>
-<CardProduto/>
-<CardProduto/>
-<CardProduto/>
+<CardProduto titulo={"Camiseta 3 Arsenal Fem"} preco={"R$ 379,99"} img={camisetaArsenal}/>
+<CardProduto titulo={"Camisa Cruzeiro III Fem "} preco={"R$ 349,99"} img={camisetaCruzeiro}/>
+<CardProduto titulo={"Camiseta Passa a Bola Fem"} preco={"R$ 79,90"} img={camisetaPassaABola}/>
+
+<CardProduto titulo={"3 Camisetas Passa a Bola Fem"} preco={"R$ 299,90"} img={camisa3passaabola}/>
+<CardProduto titulo={"Jaqueta Folgada Classic"} preco={"R$ 399,99"} img={jaquetafeminina}/>
+<CardProduto titulo={"Bola UWCL League 24/25"} preco={"R$ 259,99"} img={bola}/>
+<CardProduto titulo={"Camiseta Tiro 24"} preco={"R$ 159,99"} img={camisetatiro}/>
+
 
     </div>
 
