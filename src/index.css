@@ -26,3 +26,25 @@
 .whitespace-pre-line {
   white-space: pre-line;
 }
+
+.swiper-pagination-bullet {
+  /* Deixar as bolinhas maiores */
+  width: 12px !important;
+  height: 12px !important;
+
+  /* Cor das bolinhas inativas (branco semi-transparente) */
+  background-color: #ffffff !important; 
+  opacity: 0.5 !important;
+
+  /* Animação suave para a transição de cor */
+  transition: all 0.3s ease !important;
+}
+
+/* Estilo APENAS para a bolinha do slide ATIVO */
+.swiper-pagination-bullet-active {
+  /* Cor ROSA para a bolinha ativa */
+  background-color: var(--color-btn-accent, #E5599D) !important; 
+
+  /* Garante que a bolinha ativa fique totalmente opaca */
+  opacity: 1 !important;
+}
