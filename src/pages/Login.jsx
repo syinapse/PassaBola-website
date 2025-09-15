@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Header3 } from '../components/Header3'
 import logoGoogle from '../assets/logos/googleLogo.svg'
+import videoBg from '../assets/banners/videoBanner.mp4'
 export const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -26,14 +27,20 @@ export const Login = () => {
   return (
     <div className='h-screen overflow-hidden'>
          <Header3/>
-    <div className='min-h-screen flex '>
+    <div className='min-h-screen flex md:flex-row'>
           <div className="w-1/2 bg-white flex items-center justify-center">
         {/*lado esqurdo da tela de ligin*/}
-        <h1 className="text-3xl font-bold">Logo / Imagem</h1>
+        <video
+    src={videoBg}
+    autoPlay
+    loop
+    muted
+     className="w-full h-full object-cover hidden md:block"
+  />
       </div>
 
 
-        <div className='w-1/2 flex flex-col items-center justify-start pt-25 gap-20 min-h-screen bg-background'>
+       <div className='w-full md:w-1/2 flex flex-col items-center justify-start pt-8 md:pt-20 gap-8 min-h-screen bg-background'>
               {/*lado direito da tela de ligin*/}
         <div className='flex flex-col items-start ml-8 md:ml-20 lg:ml-40 px-8 w-full gap-3'>
               <h2 className='text-3xl'>Login <span className='text-text-accent'>PASSA A BOLA</span></h2>
