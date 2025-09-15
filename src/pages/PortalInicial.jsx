@@ -12,8 +12,8 @@ import logoCamp5 from '../assets/PaginaPrincipal/Ellipse5.png';
 import bannerImage from '../assets/PaginaPrincipal/Banner.jpg'; 
 
 // Imagens cards
-import newsImage1 from '../assets/PaginaPrincipal/corinthias.png'; 
-import newsImage2 from '../assets/PaginaPrincipal/cruzeiro.png';
+import newsImage1 from '../assets/PaginaPrincipal/cruzeiro.png';
+import newsImage2 from '../assets/PaginaPrincipal/corinthians.png'; 
 import newsImage3 from '../assets/PaginaPrincipal/marta.png';
 
 
