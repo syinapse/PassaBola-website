@@ -12,15 +12,17 @@ import { MapaQuadras } from './pages/MapaQuadras'
 
 
 import { Loja } from './pages/Loja'
+import { PassaABola } from './pages/PassaABola'
 
 
 export const AppRouter = () => {
   return (
     <div>
     <Routes>
-    <Route path='/' element={<PortalInicial/>}/>
+    <Route path='/' element={<PassaABola/>}/>
     <Route path='*' element={<Error404/>}/>
-    <Route path='/noticias' element={<Noticias/>}/>
+    <Route path='/noticias' element={<PortalInicial/>}/>
+    <Route path='/saibamais' element={<Noticias/>}/>
     <Route path='/cadastro' element={<CadatroNova/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/jogadores' element={<SessaoJogadores/>}/>

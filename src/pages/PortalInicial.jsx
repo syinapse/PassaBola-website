@@ -48,7 +48,7 @@ export const PortalInicial = () => {
             contra os EUA
           </h2>
           <Link 
-            to="/noticias"
+            to="/saibamais"
             className='border-purple-500 bg-transparent border-2 rounded-full px-12 py-3 text-purple-500 font-semibold text-xl transition-all duration-300 hover:bg-purple-500 hover:text-white'
           >
             Saiba Mais
