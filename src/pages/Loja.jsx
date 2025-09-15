@@ -10,9 +10,14 @@ import camisa3passaabola from '../assets/products/3camisapassaabola.png'
 import jaquetafeminina from '../assets/products/jaquetafeminina.png'
 import bola from '../assets/products/bola.png'
 import camisetatiro from '../assets/products/camisetatiro.png'
+
 import novaColecao from '../assets/cards/novaColecao.svg'
 import produtosOriginais from '../assets/cards/produtosoriginais.svg'
 import freteGratis from '../assets/cards/freteGratis.svg'
+
+import acessorioCard from '../assets/cards/AceesorioCard.svg'
+import camisetaCard from '../assets/cards/camisetaCard.svg'
+import jaquetaCard from '../assets/cards/jaquetaCard.svg'
 
 export const Loja = () => {
   return (
