@@ -1,19 +1,21 @@
-import React, { useState } from 'react'; // 1. Importe o useState
+import React, { useState } from 'react';
 
-// Sub-componente para cada seção, agora com lógica de clique
+// Sub-componente para cada seção, agora com a lógica da seta
 const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
   <div className="mb-4">
-    {/* O h3 agora é clicável e chama a função onToggle */}
     <h3 
       className="font-bold mb-2 text-gray-800 cursor-pointer flex items-center"
       onClick={onToggle}
     >
-      {/* O ícone muda dependendo se a seção está aberta ou fechada */}
-      <i className={`fas ${isOpen ? 'fa-caret-down' : 'fa-caret-right'} mr-2 text-gray-500 w-3`}></i>
+      {/* ===== A LÓGICA DA SETINHA ESTÁ AQUI =====
+        - Se a seção estiver aberta (isOpen for true), o ícone será 'fa-caret-down' (▼).
+        - Se estiver fechada (isOpen for false), o ícone será 'fa-caret-right' (▶).
+      */}
+      <i className={`fas ${isOpen ? 'fa-caret-down' : 'fa-caret-right'} mr-2 text-gray-500 w-3 transition-transform duration-200`}></i>
       {title}
     </h3>
     
-    {/* A lista (ul) só será renderizada se isOpen for verdadeiro */}
+    {/* A lista só aparece se a seção estiver aberta */}
     {isOpen && (
       <ul className="pl-6 text-sm text-gray-600 list-disc list-inside">
         {items.map((item, index) => (
@@ -27,8 +29,7 @@ const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
 );
 
 export const FilterSidebar = () => {
-  // 2. Crie um estado para controlar as seções abertas/fechadas
-  // Começamos com todas abertas (true), como no design
+  // Estado para controlar quais seções estão abertas
   const [openSections, setOpenSections] = useState({
     advanced: true,
     tryouts: true,
@@ -36,15 +37,15 @@ export const FilterSidebar = () => {
     mainNews: true,
   });
 
-  // 3. Crie uma função para alternar o estado de uma seção
+  // Função para alternar o estado de uma seção
   const handleToggle = (section) => {
     setOpenSections(prevState => ({
       ...prevState,
-      [section]: !prevState[section], // Inverte o valor (true vira false, false vira true)
+      [section]: !prevState[section],
     }));
   };
 
-  // Dados dos filtros (organizei "Estado" e "Cidade" dentro de "Busque por Peneiras")
+  // Dados dos filtros
   const advancedFilters = ['Competições de Base', 'Libertadores', 'Champions League', 'Premier League', 'La Liga', 'Campeonato Brasileiro'];
   const tryoutFilters = ['Mais populares', 'Mais recentes', 'Para encerrar', 'Estado', 'Cidade'];
   const categoryFilters = ['SUB-15', 'SUB-17', 'SUB-20', 'PROFISSIONAL'];
@@ -62,7 +63,7 @@ export const FilterSidebar = () => {
         Filtros de Pesquisa
       </h2>
 
-      {/* 4. Passe o estado e a função para cada componente FilterSection */}
+      {/* Passando o estado e a função para cada seção de filtro */}
       <FilterSection 
         title="Filtro de Notícia Avançado" 
         items={advancedFilters} 
