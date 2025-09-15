@@ -49,3 +49,41 @@
   background-color: var(--color-btn-accent, #E5599D) !important; 
   opacity: 1 !important;
 }
+
+
+
+/* ESTILIZAÇÃO CUSTOMIZADA DAS SETAS DO SWIPER  para HighlightsSections.jsx */
+
+
+/* Remove o estilo padrão da seta (que é um caractere '>') */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '' !important;
+}
+
+/* Estilo para ambas as setas */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.7) !important; 
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Cor da setinha (ícone) dentro do botão */
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  color: #333333 !important;
+  width: 20px !important;
+  height: 20px !important;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '../pages/Noticias';
+// import { Link } from '';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
 import { NewsCard } from '../components/NewsCard';
