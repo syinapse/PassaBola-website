@@ -9,7 +9,6 @@ import slide1 from '../assets/PassaBola/Fiap.jpeg';
 import slide2 from '../assets/PassaBola/CopaBola.png';
 import slide3 from '../assets/PassaBola/LojaBanner.png';
 
-
 export const HeroSection = () => {
   const slides = [
     { 
@@ -29,7 +28,7 @@ export const HeroSection = () => {
       title: 'Conheça a Loja\nPassa a Bola', 
       type: 'inscricao',
       buttonText: 'Conheça Já!',
-      linkTo: '/inscricao-copa-passa-a-bola'
+      linkTo: '/loja'
     },
   ];
 
@@ -45,9 +44,9 @@ export const HeroSection = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            {/* ===== MUDANÇA PRINCIPAL AQUI ===== */}
             <div 
-              className={`relative flex flex-col h-screen bg-black px-10 md:px-20 lg:px-40 
+              // A MUDANÇA ESTÁ AQUI 👇
+              className={`relative flex flex-col h-[90vh] bg-black px-10 md:px-20 lg:px-40 
                 ${slide.type === 'video' 
                   ? 'justify-center items-center text-center' 
                   : 'justify-center items-start text-left'
