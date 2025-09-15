@@ -13,13 +13,12 @@
   --color-text: #100118;
   --color-text-accent: #FC75AA;
   --color-btn-accent: #E5599D;
-  
 }
 
 .font-serif-display {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .font-quando {
-    font-family: 'Quando', serif;
+  font-family: 'Quando', serif;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
+import { NewsCard } from '../components/NewsCard.jsx';
 
 // Importe seus logos e o banner
 import logoCamp1 from '../assets/PaginaPrincipal/Ellipse1.png';
@@ -9,6 +10,13 @@ import logoCamp3 from '../assets/PaginaPrincipal/Ellipse3.png';
 import logoCamp4 from '../assets/PaginaPrincipal/Ellipse4.png';
 import logoCamp5 from '../assets/PaginaPrincipal/Ellipse5.png';
 import bannerImage from '../assets/PaginaPrincipal/Banner.jpg'; 
+
+// Imagens cards
+import newsImage1 from '../assets/PaginaPrincipal/corinthias.png'; 
+import newsImage2 from '../assets/PaginaPrincipal/cruzeiro.png';
+import newsImage3 from '../assets/PaginaPrincipal/marta.png';
+
+
 
 export const PortalInicial = () => {
   return (
@@ -55,24 +63,32 @@ export const PortalInicial = () => {
       </section>
 
       {/* ===== SEÇÃO FILTROS E CARDS ===== */}
-      <div className='flex bg-background justify-between p-10 gap-6 min-h-screen'>
-        <aside>
-          <p>Filtros legais</p>
+      <div className='bg-[#F4F4F4] grid grid-cols-1 lg:grid-cols-4 gap-8 p-10 lg:p-16'>
+        
+        {/* Coluna da Sidebar de Filtros (continua na esquerda) */}
+        <aside className="col-span-1">
+          <p>Filtros legais</p> 
         </aside>
-        <div className='flex flex-col justify-around'>
-          <div className="bg-white rounded-xl shadow-lg p-6 w-80 h-64 flex flex-col items-center justify-center">
-            <h3 className="text-xl font-bold mb-2">Título do Card 1</h3>
-            <p className="text-gray-700 text-center mb-4">Descrição do primeiro card.</p>
-          </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 w-80 h-64 flex flex-col items-center justify-center">
-            <h3 className="text-xl font-bold mb-2">Título do Card 2</h3>
-            <p className="text-gray-700 text-center mb-4">Descrição do segundo card.</p>
-          </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 w-80 h-64 flex flex-col items-center justify-center">
-            <h3 className="text-xl font-bold mb-2">Título do Card 3</h3>
-            <p className="text-gray-700 text-center mb-4">Descrição do terceiro card.</p>
-          </div>
+
+        {/* Coluna dos Cards de Notícias (agora começando na 3ª coluna) */}
+        <div className="col-span-1 lg:col-span-2 lg:col-start-3 flex flex-col gap-8">
+          <NewsCard 
+            imageSrc={newsImage1}
+            title="Cruzeiro feminino ainda não sabe quando vai jogar em 2025"
+            date="11/01/2025"
+          />
+          <NewsCard 
+            imageSrc={newsImage2}
+            title="Corinthians feminino é campeão mundial em 2025"
+            date="09/06/2025"
+          />
+          <NewsCard 
+            imageSrc={newsImage3}
+            title="Ao lado de Marta, mato-grossense Ana Vitória é convocada pela Seleção para a Copa América"
+            date="11/01/2025"
+          />
         </div>
+
       </div>
 
       <Footer />
