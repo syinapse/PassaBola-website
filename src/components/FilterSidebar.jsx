@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { FunnelIcon } from '@heroicons/react/24/outline';
 
-
+// O sub-componente FilterSection continua o mesmo
 const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
   <div className="mb-4">
     <h3 
-      className="font-bold mb-2 text-gray-800 cursor-pointer flex items-center text-xl" 
+      className="font-bold mb-2 text-gray-800 cursor-pointer flex items-center text-xl"
       onClick={onToggle}
     >
       <i className={`fas ${isOpen ? 'fa-caret-down' : 'fa-caret-right'} mr-2 text-gray-500 w-3 transition-transform duration-200`}></i>
@@ -12,7 +13,7 @@ const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
     </h3>
     
     {isOpen && (
-      <ul className="pl-6 text-lg text-gray-600 list-disc list-inside"> 
+      <ul className="pl-6 text-lg text-gray-600 list-disc list-inside">
         {items.map((item, index) => (
           <li key={index} className={`mb-1 ${isBold ? 'font-semibold' : ''}`}>
             {item}
@@ -24,14 +25,13 @@ const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
 );
 
 export const FilterSidebar = () => {
+  // ... (toda a sua lógica de state e os dados dos filtros continuam aqui) ...
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  // Função para abrir/fechar a sidebar
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  // O estado e a função para os filtros internos continuam os mesmos
   const [openSections, setOpenSections] = useState({
     advanced: true,
     tryouts: true,
@@ -46,7 +46,6 @@ export const FilterSidebar = () => {
     }));
   };
 
-  // Dados dos filtros
   const advancedFilters = ['Competições de Base', 'Libertadores', 'Champions League', 'Premier League', 'La Liga', 'Campeonato Brasileiro'];
   const tryoutFilters = ['Mais populares', 'Mais recentes', 'Para encerrar', 'Estado', 'Cidade'];
   const categoryFilters = ['SUB-15', 'SUB-17', 'SUB-20', 'PROFISSIONAL'];
@@ -56,11 +55,11 @@ export const FilterSidebar = () => {
     <div className="bg-white p-6 rounded-lg shadow-md text-gray-800 border border-purple-200">
 
       <h2 
-        className="text-3xl font-extrabold mb-4 flex items-center justify-between gap-3 border-b pb-2 cursor-pointer lg:cursor-default" // AUMENTADO: de text-2xl para text-3xl
+        className="text-3xl font-bold mb-4 flex items-center justify-between gap-3 border-b pb-2 cursor-pointer lg:cursor-default"
         onClick={toggleSidebar}
       >
         <div className="flex items-center gap-3">
-          <i className="fas fa-filter"></i>
+          <FunnelIcon className="h-6 w-6" />
           <span>Filtros de Pesquisa</span>
         </div>
         <i className={`fas ${isSidebarOpen ? 'fa-chevron-up' : 'fa-chevron-down'} lg:hidden`}></i>
@@ -73,6 +72,7 @@ export const FilterSidebar = () => {
           isOpen={openSections.advanced}
           onToggle={() => handleToggle('advanced')}
         />
+
         <FilterSection 
           title="Busque por Peneiras" 
           items={tryoutFilters} 
