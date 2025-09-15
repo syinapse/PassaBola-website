@@ -17,8 +17,8 @@ export const FeaturesSection = () => {
             <div className="bg-purple-100 p-4 rounded-lg mb-4">
               <feature.icon className="h-8 w-8 text-purple-600"/>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-gray-800">{feature.title}</h3>
-            <p className="text-gray-600">{feature.description}</p>
+            <h3 className="text-2xl font-bold mb-2 text-gray-800">{feature.title}</h3>
+            <p className="text-gray-600 ">{feature.description}</p>
           </div>
         ))}
       </div>
