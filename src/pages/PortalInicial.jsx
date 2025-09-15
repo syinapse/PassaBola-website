@@ -9,7 +9,7 @@ import slide1 from '../assets/PassaBola/Fiap.jpeg';
 import slide2 from '../assets/PassaBola/CopaBola.png';
 import slide3 from '../assets/PassaBola/LojaBanner.png';
 
-export const HeroSection = () => {
+export const PortalInicial = () => {
   const slides = [
     { 
       image: slide1, 
