@@ -6,7 +6,7 @@ export const SocialSection = () => {
   return (
     <section id="redes-sociais" className="bg-gray-100 py-20 px-6 font-quando">
       <div className="container mx-auto text-center">
-        <h2 className="text-5xl font-bold mb-12 text-gray-800 underline decoration-blue-500 underline-offset-8">
+        <h2 className="text-5xl font-bold mb-12 text-gray-800 underline decoration-purple-500 underline-offset-8">
           Redes Sociais
         </h2>
         
@@ -38,8 +38,8 @@ export const SocialSection = () => {
           </div>
 
           <div className="text-center md:text-left pl-0 md:pl-10 border-t md:border-t-0 md:border-l border-white/30 mt-8 md:mt-0 pt-8 md:pt-0">
-            <p className="font-bold mb-3 text-lg">O que esperar do nosso canal?</p>
-            <ul className="list-disc list-inside text-base space-y-1">
+            <p className="font-bold mb-3 text-xl">O que esperar do nosso canal?</p>
+            <ul className="list-disc list-inside space-y-1 text-lg">
               <li>Podcast FalaBB</li>
               <li>Desafios de Futebol</li>
               <li>Curiosidades do Futebol Feminino</li>
