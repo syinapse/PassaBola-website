@@ -22,3 +22,7 @@
 .font-quando {
   font-family: 'Quando', serif;
 }
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}
