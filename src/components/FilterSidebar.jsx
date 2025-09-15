@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // 1. Importe o useState
 
-// Sub-componente para cada seção, agora com a lógica da seta
+// O sub-componente FilterSection continua o mesmo
 const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
   <div className="mb-4">
     <h3 
-      className="font-bold mb-2 text-gray-800 cursor-pointer flex items-center"
+      className="font-bold mb-2 text-gray-800 cursor-pointer flex items-center text-lg"
       onClick={onToggle}
     >
-      {/* ===== A LÓGICA DA SETINHA ESTÁ AQUI =====
-        - Se a seção estiver aberta (isOpen for true), o ícone será 'fa-caret-down' (▼).
-        - Se estiver fechada (isOpen for false), o ícone será 'fa-caret-right' (▶).
-      */}
       <i className={`fas ${isOpen ? 'fa-caret-down' : 'fa-caret-right'} mr-2 text-gray-500 w-3 transition-transform duration-200`}></i>
       {title}
     </h3>
     
-    {/* A lista só aparece se a seção estiver aberta */}
     {isOpen && (
-      <ul className="pl-6 text-sm text-gray-600 list-disc list-inside">
+      <ul className="pl-6 text-base text-gray-600 list-disc list-inside"> 
         {items.map((item, index) => (
           <li key={index} className={`mb-1 ${isBold ? 'font-semibold' : ''}`}>
             {item}
@@ -29,7 +24,15 @@ const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
 );
 
 export const FilterSidebar = () => {
-  // Estado para controlar quais seções estão abertas
+  // 2. Adicionamos um estado para controlar a visibilidade da sidebar inteira em mobile
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  // Função para abrir/fechar a sidebar
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  // O estado e a função para os filtros internos continuam os mesmos
   const [openSections, setOpenSections] = useState({
     advanced: true,
     tryouts: true,
@@ -37,7 +40,6 @@ export const FilterSidebar = () => {
     mainNews: true,
   });
 
-  // Função para alternar o estado de uma seção
   const handleToggle = (section) => {
     setOpenSections(prevState => ({
       ...prevState,
@@ -52,43 +54,49 @@ export const FilterSidebar = () => {
   const mainNewsFilters = ['Resultados da rodada', 'Mercado de transferências', 'Seleção Brasileira', 'Anúncios Recentes'];
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md text-gray-800">
-      <div className="flex items-center gap-2 mb-4 font-semibold">
-        <i className="fas fa-caret-right text-purple-600"></i>
-        <span>Passe a Bola</span>
-      </div>
+    <div className="bg-white p-6 rounded-lg shadow-md text-gray-800 border border-purple-200">
 
-      <h2 className="text-xl font-extrabold mb-4 flex items-center gap-3 border-b pb-2">
-        <i className="fas fa-filter"></i>
-        Filtros de Pesquisa
+      {/* 3. O título principal agora controla a visibilidade da sidebar em telas pequenas */}
+      <h2 
+        className="text-2xl font-extrabold mb-4 flex items-center justify-between gap-3 border-b pb-2 cursor-pointer lg:cursor-default"
+        onClick={toggleSidebar}
+      >
+        <div className="flex items-center gap-3">
+          <i className="fas fa-filter"></i>
+          <span>Filtros de Pesquisa</span>
+        </div>
+        {/* Ícone de seta que só aparece em telas pequenas */}
+        <i className={`fas ${isSidebarOpen ? 'fa-chevron-up' : 'fa-chevron-down'} lg:hidden`}></i>
       </h2>
 
-      {/* Passando o estado e a função para cada seção de filtro */}
-      <FilterSection 
-        title="Filtro de Notícia Avançado" 
-        items={advancedFilters} 
-        isOpen={openSections.advanced}
-        onToggle={() => handleToggle('advanced')}
-      />
-      <FilterSection 
-        title="Busque por Peneiras" 
-        items={tryoutFilters} 
-        isBold={true}
-        isOpen={openSections.tryouts}
-        onToggle={() => handleToggle('tryouts')}
-      />
-      <FilterSection 
-        title="Categorias de Base" 
-        items={categoryFilters} 
-        isOpen={openSections.categories}
-        onToggle={() => handleToggle('categories')}
-      />
-      <FilterSection 
-        title="Principais Notícias" 
-        items={mainNewsFilters} 
-        isOpen={openSections.mainNews}
-        onToggle={() => handleToggle('mainNews')}
-      />
+      {/* 4. O conteúdo dos filtros é envolvido por um div que controla a visibilidade */}
+      <div className={`transition-all duration-300 ${isSidebarOpen ? 'block' : 'hidden'} lg:block`}>
+        <FilterSection 
+          title="Filtro de Notícia Avançado" 
+          items={advancedFilters} 
+          isOpen={openSections.advanced}
+          onToggle={() => handleToggle('advanced')}
+        />
+        <FilterSection 
+          title="Busque por Peneiras" 
+          items={tryoutFilters} 
+          isBold={true}
+          isOpen={openSections.tryouts}
+          onToggle={() => handleToggle('tryouts')}
+        />
+        <FilterSection 
+          title="Categorias de Base" 
+          items={categoryFilters} 
+          isOpen={openSections.categories}
+          onToggle={() => handleToggle('categories')}
+        />
+        <FilterSection 
+          title="Principais Notícias" 
+          items={mainNewsFilters} 
+          isOpen={openSections.mainNews}
+          onToggle={() => handleToggle('mainNews')}
+        />
+      </div>
     </div>
   );
 };
