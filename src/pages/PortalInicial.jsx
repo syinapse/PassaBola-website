@@ -2,8 +2,11 @@ import React from 'react';
 import { Header1 } from '../components/Header1';
 import { Footer } from '../components/Footer';
 import { NewsCard } from '../components/NewsCard.jsx';
+import { FilterSidebar } from '../components/FilterSidebar.jsx';
 
-// Importe seus logos e o banner
+
+
+// Importe dos logos e o banner
 import logoCamp1 from '../assets/PaginaPrincipal/Ellipse1.png';
 import logoCamp2 from '../assets/PaginaPrincipal/Ellipse2.png';
 import logoCamp3 from '../assets/PaginaPrincipal/Ellipse3.png';
@@ -67,7 +70,7 @@ export const PortalInicial = () => {
         
         {/* Coluna da Sidebar de Filtros (continua na esquerda) */}
         <aside className="col-span-1">
-          <p>Filtros legais</p> 
+          <FilterSidebar/>
         </aside>
 
         {/* Coluna dos Cards de Notícias (agora começando na 3ª coluna) */}
