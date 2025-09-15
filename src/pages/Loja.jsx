@@ -19,17 +19,23 @@ import acessorioCard from '../assets/cards/AceesorioCard.svg'
 import camisetaCard from '../assets/cards/camisetaCard.svg'
 import jaquetaCard from '../assets/cards/jaquetaCard.svg'
 
+
+import bannerBola from '../assets/banners/bannerBola.png'
+
 export const Loja = () => {
   return (
     <div className='overflow-x-hidden'>
         <Header1/>
-<section className="bg-gray-700 flex flex-col gap-1 justify-center items-center text-center py-20">
-    <h2 className='text-4xl text-white'>3 CAMISETAS PASSE A BOLA</h2>
-    <p className='text-3xl text-primary-2'>POR R$299,90</p>
+<section className="flex flex-col gap-1 justify-center items-center text-center py-18  bg-cover bg-center bg-no-repeat"
+ style={{ backgroundImage: `url(${bannerBola})` }}>
+  
+    <h2 className='text-4xl text-white font-quando'>3 CAMISETAS PASSE A BOLA</h2>
+    <p className='text-3xl text-primary-2 font-quando'>POR R$299,90</p>
 </section>
 <div className="flex flex-col items-center gap-4 justify-center py-12 bg-background">
 
-  <h2 className="text-3xl mb-8">Mais Vendidos</h2>
+  <h2 className="text-4xl font-quando mb-8">Mais Vendidos</h2>
+
 
 
   <section className="w-full max-w-6xl px-6">
@@ -55,19 +61,19 @@ export const Loja = () => {
       </button>
     </div>
   </section>
-  <section className='flex py-8 w-full justify-around items-center'>
-    <button><img src={novaColecao} alt="nova colecao" /></button>
-    <button><img src={produtosOriginais} alt="produtos originais" /></button>
-    <button><img src={freteGratis} alt="frete grátis" /></button>
-    <button></button>
+  <section className='flex py-8 w-full justify-around items-center gap-6'>
+    <button className='cursor-pointer'><img src={novaColecao} alt="nova colecao" /></button>
+    <button className='cursor-pointer'><img src={produtosOriginais} alt="produtos originais" /></button>
+    <button className='cursor-pointer'><img src={freteGratis} alt="frete grátis" /></button>
 
 
   </section>
-  <h2>Nosso Catálogo</h2>
-  <section className='flex justify-around w-full'>
-    <h2>CARD</h2>
-    <h2>CARD</h2>
-    <h2>CARD</h2>
+  <h2 className='font-quando text-4xl'>Nosso Catálogo</h2>
+  <section className='flex justify-around w-full gap-6'>
+    <button className='cursor-pointer'><img src={camisetaCard} alt="frete grátis" /></button>
+    <button className='cursor-pointer'><img src={jaquetaCard} alt="frete grátis" /></button>
+    <button className='cursor-pointer'><img src={acessorioCard} alt="frete grátis" /></button>
+
   </section>
 </div>
 <Footer/>
