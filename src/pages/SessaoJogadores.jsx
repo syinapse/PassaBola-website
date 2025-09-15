@@ -52,19 +52,19 @@ export const SessaoJogadores = () => {
 
             <div className="bg-white rounded-xl shadow-sm p-6 h-fit">
               <div className="space-y-4">
-                <div className="flex items-center space-x-2 text-gray-700">
+                <div className="flex items-center space-x-2">
                   <FaFutbol className="text-purple-600 text-xl" />
                   <span>
                     <strong className="text-purple-600 text-md">19</strong> Gols Marcados
                   </span>
                 </div>
-                <div className="flex items-center space-x-2 text-gray-700">
+                <div className="flex items-center space-x-2">
                   <FaTrophy className="text-purple-600 text-xl" />
                   <span>
                     <strong className="text-purple-600 text-md">03</strong> Partidas Jogadas
                   </span>
                 </div>
-                <div className="flex items-center space-x-2 text-gray-700">
+                <div className="flex items-center space-x-2">
                   <FaRegClock className="text-purple-600 text-xl" />
                   <span>
                     <strong className="text-purple-600 text-md">60</strong> Minutos em campo
@@ -83,7 +83,7 @@ export const SessaoJogadores = () => {
                   <p className="text-md text-gray-500">15 minutos atrás</p>
                 </div>
               </div>
-              <p className="text-gray-700 mb-4">
+              <p className=" mb-4">
                 🎯 Vem aí mais uma chance de mostrar seu talento!A equipe Meninas da Aurora FC está promovendo uma peneira para jogadoras de 14 a 18 anos em São Paulo. As vagas são limitadas, e a oportunidade é incrível!              </p>
               <div className="flex items-center text-md text-black">
                 <span>📍 Local: Arena Zona Sul</span>
@@ -100,7 +100,7 @@ export const SessaoJogadores = () => {
 
 
               <img src={peneira} alt="Peneira Aurora FC" className="w-full h-auto rounded-xl mb-4" />
-              <div className="flex text-md text-gray-500 mt-4 space-x-4">
+              <div className="flex text-md text-text mt-4 space-x-4">
                 <button className="flex items-center space-x-1 cursor-pointer">
                   <img src={like} alt="Curtir" className="" />
                   <span className=''>Gostei</span>
@@ -108,7 +108,7 @@ export const SessaoJogadores = () => {
 
                 <button className="flex items-center space-x-1 cursor-pointer">
                   <img src={compartilhar} alt="Compartilhar" className="" />
-                  <span>Compartilhar</span>
+                  <span className="">Compartilhar</span>
                 </button>
 
                 <button className="flex items-center space-x-1 cursor-pointer">
@@ -134,7 +134,7 @@ export const SessaoJogadores = () => {
                 <img src={video1} alt="Aira Bonfim" className="w-full h-auto rounded-xl" />
                 <img src={video2} alt="Aira Bonfim" className="w-full h-auto rounded-xl" />
               </div>
-              <div className="flex text-md text-gray-500 mt-4 space-x-4">
+              <div className="flex text-md text-text mt-4 space-x-4">
                 <button className="flex items-center space-x-1 cursor-pointer">
                   <img src={like} alt="Curtir" className="" />
                   <span className=''>Gostei</span>
@@ -158,19 +158,19 @@ export const SessaoJogadores = () => {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="font-bold text-lg mb-4">Últimas peneiras abertas</h3>
               <ul className="space-y-3">
-                <li className="flex justify-between items-center text-md text-gray-700">
+                <li className="flex justify-between items-center text-md text-black">
                   <span>Peneira Clube 1</span>
                   <span className="text-purple-600 font-medium text-lg">há 2 dias</span>
                 </li>
-                <li className="flex justify-between items-center text-md text-gray-700">
+                <li className="flex justify-between items-center text-md text-black">
                   <span>Peneira Clube 2</span>
                   <span className="text-purple-600 font-medium text-lg">há 7 dias</span>
                 </li>
-                <li className="flex justify-between items-center text-md text-gray-700">
+                <li className="flex justify-between items-center text-md text-black ">
                   <span>Peneira Clube 3</span>
                   <span className="text-purple-600 font-medium text-lg">há 5 dias</span>
                 </li>
-                <li className="flex justify-between items-center text-md text-gray-700">
+                <li className="flex justify-between items-center text-md text-black">
                   <span>Peneira Clube 4</span>
                   <span className="text-purple-600 font-medium text-lg">há 3 dias</span>
                 </li>
@@ -181,7 +181,7 @@ export const SessaoJogadores = () => {
               <h3 className="font-bold text-lg mb-4">Clubes de Luana Alves</h3>
               <div className="flex items-center space-x-4">
                 <img src={logo} alt="Aurora FC" className="w-10 h-10 rounded-full" />
-                <span className="text-gray-800 font-medium">Aurora FC</span>
+                <span className="text-gray-800 text-lg font-bold">Aurora FC</span>
               </div>
             </div>
           </div>

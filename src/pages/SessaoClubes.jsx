@@ -51,19 +51,19 @@ export const SessaoClubes = () => {
 
                         <div className="bg-white rounded-xl shadow-sm p-6 h-fit">
                             <div className="space-y-4">
-                                <div className="flex items-center space-x-2 text-gray-700">
+                                <div className="flex items-center space-x-2 ">
                                     <FaFutbol className="text-purple-600 text-xl" />
                                     <span>
                                         <strong className="text-purple-600 text-md">19</strong> Peneiras Organizadas
                                     </span>
                                 </div>
-                                <div className="flex items-center space-x-2 text-gray-700">
+                                <div className="flex items-center space-x-2">
                                     <FaTrophy className="text-purple-600 text-xl" />
                                     <span>
                                         <strong className="text-purple-600 text-md">03</strong> Titulos Conquistados
                                     </span>
                                 </div>
-                                <div className="flex items-center space-x-2 text-gray-700">
+                                <div className="flex items-center space-x-2">
                                     <FaRegClock className="text-purple-600 text-xl" />
                                     <span>
                                         <strong className="text-purple-600 text-md">60</strong> Jogadoras de Base
@@ -82,7 +82,7 @@ export const SessaoClubes = () => {
                                     <p className="text-md text-gray-500">15 minutos atrás</p>
                                 </div>
                             </div>
-                            <p className="text-gray-700 mb-4">
+                            <p className="mb-4">
                                 🎯 Vem aí mais uma chance de mostrar seu talento!A equipe Meninas da Aurora FC está promovendo uma peneira para jogadoras de 14 a 18 anos em São Paulo. As vagas são limitadas, e a oportunidade é incrível!              </p>
                             <div className="flex items-center text-md text-black">
                                 <span>📍 Local: Arena Zona Sul</span>
@@ -99,7 +99,7 @@ export const SessaoClubes = () => {
 
 
                             <img src={peneira} alt="Peneira Aurora FC" className="w-full h-auto rounded-xl mb-4" />
-                            <div className="flex text-md text-gray-500 mt-4 space-x-4">
+                            <div className="flex text-md text-text mt-4 space-x-4">
                                 <button className="flex items-center space-x-1 cursor-pointer">
                                     <img src={like} alt="Curtir" className="" />
                                     <span className=''>Gostei</span>
@@ -126,14 +126,14 @@ export const SessaoClubes = () => {
                                     <p className="text-md text-gray-500">30 minutos atrás</p>
                                 </div>
                             </div>
-                            <p className="text-gray-700 mb-4">
+                            <p className="mb-4">
                                 “O futebol feminino não precisa de permissão pra existir” — Aira Bonfim no #PABCAST <br></br>Um trecho poderoso da conversa com Aira Bonfim, falando sobre memória, esporte e resistência no futebol de mulheres.<br></br><br></br>🔥 Imperdível para quem acompanha o projeto e acredita na transformação pelo esporte.
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 <img src={video1} alt="Aira Bonfim" className="w-full h-auto rounded-xl" />
                                 <img src={video2} alt="Aira Bonfim" className="w-full h-auto rounded-xl" />
                             </div>
-                            <div className="flex text-md text-gray-500 mt-4 space-x-4">
+                            <div className="flex text-md text-text mt-4 space-x-4">
                                 <button className="flex items-center space-x-1 cursor-pointer">
                                     <img src={like} alt="Curtir" className="" />
                                     <span className=''>Gostei</span>
