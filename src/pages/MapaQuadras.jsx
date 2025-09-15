@@ -42,7 +42,7 @@ export const MapaQuadras = () => {
               <p className="text-sm font-light text-purple-200">São Paulo</p>
             </div>
           </div>
-          <button className="bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100">
+          <button className="bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-pink-700 cursor-pointer">
             Ver no Maps
           </button>
         </div>
