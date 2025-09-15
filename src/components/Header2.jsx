@@ -7,9 +7,7 @@ export const Header2 = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const navigate = useNavigate()
 
-  const handleClick = () => {
-    navigate('/cadastro')
-  }
+
     const handleLogin = () =>{
     navigate('/')
   }
