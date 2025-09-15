@@ -61,20 +61,34 @@ export const Loja = () => {
       </button>
     </div>
   </section>
-  <section className='flex py-8 w-full justify-around items-center gap-6'>
-    <button className='cursor-pointer'><img src={novaColecao} alt="nova colecao" /></button>
-    <button className='cursor-pointer'><img src={produtosOriginais} alt="produtos originais" /></button>
-    <button className='cursor-pointer'><img src={freteGratis} alt="frete grátis" /></button>
+<h2 className="font-quando text-4xl text-center my-6">Destaques</h2>
 
+<section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto py-8">
+  <button className="cursor-pointer w-full max-w-[280px] sm:max-w-[220px] md:max-w-full mx-auto">
+    <img src={novaColecao} alt="nova colecao" className="w-full h-auto"/>
+  </button>
+  <button className="cursor-pointer w-full max-w-[280px] sm:max-w-[220px] md:max-w-full mx-auto">
+    <img src={produtosOriginais} alt="produtos originais" className="w-full h-auto"/>
+  </button>
+  <button className="cursor-pointer w-full max-w-[280px] sm:max-w-[220px] md:max-w-full mx-auto">
+    <img src={freteGratis} alt="frete grátis" className="w-full h-auto"/>
+  </button>
+</section>
 
-  </section>
-  <h2 className='font-quando text-4xl'>Nosso Catálogo</h2>
-  <section className='flex justify-around w-full gap-6'>
-    <button className='cursor-pointer'><img src={camisetaCard} alt="frete grátis" /></button>
-    <button className='cursor-pointer'><img src={jaquetaCard} alt="frete grátis" /></button>
-    <button className='cursor-pointer'><img src={acessorioCard} alt="frete grátis" /></button>
+<h2 className="font-quando text-4xl text-center my-6">Nosso Catálogo</h2>
 
-  </section>
+<section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto py-8">
+  <button className="cursor-pointer w-full max-w-[280px] sm:max-w-[220px] md:max-w-full mx-auto">
+    <img src={camisetaCard} alt="Camiseta" className="w-full h-auto"/>
+  </button>
+  <button className="cursor-pointer w-full max-w-[280px] sm:max-w-[220px] md:max-w-full mx-auto">
+    <img src={jaquetaCard} alt="Jaqueta" className="w-full h-auto"/>
+  </button>
+  <button className="cursor-pointer w-full max-w-[280px] sm:max-w-[220px] md:max-w-full mx-auto">
+    <img src={acessorioCard} alt="Acessório" className="w-full h-auto"/>
+  </button>
+</section>
+
 </div>
 <Footer/>
     </div>
