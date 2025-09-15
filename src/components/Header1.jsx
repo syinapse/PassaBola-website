@@ -16,30 +16,30 @@ export const Header1 = () => {
     <header className="flex justify-between items-center p-3 sm:p-4 md:p-4 bg-secondary-2 relative">
 
       <div className="flex items-center gap-6 md:gap-20 text-amber-50 font-bold">
-        <button onClick={handleLogin}>
+        <button onClick={handleLogin}  className='cursor-pointer'>
           <img src={logo} alt="Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain" />
         </button>
 
  
         <nav className="hidden md:block">
           <ul className="flex gap-6 md:gap-12 lg:gap-20">
-            <li><button onClick={() => navigate("/noticias")}>Notícias</button></li>
-            <li><button onClick={() => navigate("/loja")}>Loja</button></li>
+            <li><button onClick={() => navigate("/noticias")}  className='cursor-pointer'>Notícias</button></li>
+            <li><button onClick={() => navigate("/loja")}  className='cursor-pointer'>Loja</button></li>
 
 
             <li className="relative">
-              <button onClick={() => setDialogOpen(!dialogOpen)}>Conexões</button>
+              <button onClick={() => setDialogOpen(!dialogOpen)}  className='cursor-pointer'>Conexões</button>
 
               {dialogOpen && (
                 <div className="absolute top-8 left-0 w-40 bg-white text-gray-800 rounded shadow-lg flex flex-col p-2 z-50">
                   <button
-                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded"
+                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded cursor-pointer"
                     onClick={() => { navigate("/mapaquadras"); setDialogOpen(false) }}
                   >
                     Mapa de Quadras
                   </button>
                   <button
-                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded"
+                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded cursor-pointer"
                     onClick={() => { navigate("/jogadores"); setDialogOpen(false) }}
                   >
                     Área de atleta
@@ -48,14 +48,14 @@ export const Header1 = () => {
               )}
             </li>
 
-            <li><button onClick={() => navigate("/sobre")}>Sobre</button></li>
+            <li><button onClick={() => navigate("/sobre")}  className='cursor-pointer'>Sobre</button></li>
           </ul>
         </nav>
 
     
         <button 
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white text-2xl"
+          className="md:hidden text-white text-2xl cursor-pointer"
         >
           ☰
         </button>
