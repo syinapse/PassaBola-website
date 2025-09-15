@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header1 } from '../components/Header1';
+import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer';
 import { NewsCard } from '../components/NewsCard.jsx';
 import { FilterSidebar } from '../components/FilterSidebar.jsx';
@@ -46,9 +47,12 @@ export const PortalInicial = () => {
             derrotado na final <br />
             contra os EUA
           </h2>
-          <button className='border-purple-500 border-3 rounded-full px-17 py-3 text-purple-500 font-semibold text-2xl transition-opacity duration-300 hover:opacity-80'>
+          <Link 
+            to="/noticias"
+            className='border-purple-500 bg-transparent border-2 rounded-full px-12 py-3 text-purple-500 font-semibold text-xl transition-all duration-300 hover:bg-purple-500 hover:text-white'
+          >
             Saiba Mais
-          </button>
+          </Link>
         </div>
       </section>
 
