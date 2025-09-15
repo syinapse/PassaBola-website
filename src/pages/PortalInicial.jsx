@@ -65,14 +65,14 @@ export const PortalInicial = () => {
       </section>
 
       {/* ===== SEÇÃO FILTROS E CARDS ===== */}
-      <div className='bg-[#F4F4F4] grid grid-cols-1 lg:grid-cols-4 gap-8 p-10 lg:p-16'>
+      {/* MUDANÇA: Grid de 12 colunas para mais flexibilidade */}
+      <div className='bg-[#F4F4F4] grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 lg:p-16'>
         
-        {/* Coluna da Sidebar de Filtros (continua na esquerda) */}
-        <aside className="col-span-1">
-          <FilterSidebar/>
+        <aside className="col-span-1 lg:col-span-3">
+          <FilterSidebar />
         </aside>
 
-        <div className="col-span-1 lg:col-span-2 lg:col-start-3 flex flex-col gap-8">
+        <div className="col-span-1 lg:col-span-7 lg:col-start-6 flex flex-col gap-8">
           <NewsCard 
             imageSrc={newsImage1}
             title="Cruzeiro feminino ainda não sabe quando vai jogar em 2025"
