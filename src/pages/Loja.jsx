@@ -10,6 +10,9 @@ import camisa3passaabola from '../assets/products/3camisapassaabola.png'
 import jaquetafeminina from '../assets/products/jaquetafeminina.png'
 import bola from '../assets/products/bola.png'
 import camisetatiro from '../assets/products/camisetatiro.png'
+import novaColecao from '../assets/cards/novaColecao.svg'
+import produtosOriginais from '../assets/cards/produtosoriginais.svg'
+import freteGratis from '../assets/cards/freteGratis.svg'
 
 export const Loja = () => {
   return (
@@ -48,9 +51,12 @@ export const Loja = () => {
     </div>
   </section>
   <section className='flex py-8 w-full justify-around items-center'>
-    <h2>CARD</h2>
-    <h2>CARD</h2>
-    <h2>CARD</h2>
+    <button><img src={novaColecao} alt="nova colecao" /></button>
+    <button><img src={produtosOriginais} alt="produtos originais" /></button>
+    <button><img src={freteGratis} alt="frete grátis" /></button>
+    <button></button>
+
+
   </section>
   <h2>Nosso Catálogo</h2>
   <section className='flex justify-around w-full'>
