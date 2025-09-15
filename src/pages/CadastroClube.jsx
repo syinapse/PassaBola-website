@@ -121,7 +121,7 @@ const CadastroClube = () => {
               </div>
             </div>
             <div className="flex justify-end mt-12">
-              <button type="submit" className="bg-primary text-white py-3 px-12 rounded-lg font-bold hover:bg-purple-800 transition duration-300">
+              <button type="submit" className="bg-primary text-white py-3 px-12 rounded-lg font-bold cursor-pointer transition duration-300">
                 Avançar
               </button>
             </div>
