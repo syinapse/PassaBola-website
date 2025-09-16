@@ -17,6 +17,7 @@ import { Loja } from './pages/Loja'
 import { PassaABola } from './pages/PassaABola'
 import CadastroUsuario from './pages/CadastroUsuario'
 import CadastroClube from './pages/CadastroClube'
+import NoticiasComponent from './api/NoticiasComponent '
 
 
 
@@ -36,6 +37,7 @@ export const AppRouter = () => {
     <Route path='/loja' element={<Loja/>}/>
     <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
     <Route path='/cadastro-clube' element={<CadastroClube/>}/>
+    <Route path='/teste' element={<NoticiasComponent/>}/>
 
 
 
