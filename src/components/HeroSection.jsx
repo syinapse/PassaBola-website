@@ -45,7 +45,6 @@ export const HeroSection = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div 
-              // A MUDANÇA ESTÁ AQUI 👇
               className={`relative flex flex-col h-[90vh] bg-black px-10 md:px-20 lg:px-40 
                 ${slide.type === 'video' 
                   ? 'justify-center items-center text-center' 

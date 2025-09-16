@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FunnelIcon } from '@heroicons/react/24/outline';
 
-// O sub-componente FilterSection continua o mesmo
+
 const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
   <div className="mb-4">
     <h3 
@@ -25,7 +25,6 @@ const FilterSection = ({ title, items, isBold = false, isOpen, onToggle }) => (
 );
 
 export const FilterSidebar = () => {
-  // ... (toda a sua lógica de state e os dados dos filtros continuam aqui) ...
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {

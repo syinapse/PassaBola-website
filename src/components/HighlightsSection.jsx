@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules'; // Navigation já está importado, ótimo!
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -19,19 +19,18 @@ export const HighlightsSection = () => {
     <section id="destaques" className="py-20 bg-gray-50"> {/* Fundo cinza claro */}
       <div className="container mx-auto px-6">
         <h2 className="text-5xl font-bold text-center mb-12 text-gray-800 font-quando">Destaques</h2>
-        
-        {/* Adicionei 'relative group' para as setas aparecerem no hover (opcional) */}
+
         <div className="relative group">
           <Swiper
             modules={[Navigation]}
-            spaceBetween={30} // Adicionado um espaço entre slides
+            spaceBetween={30} 
             slidesPerView={1}
             navigation={{
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
             loop={true}
-            className="rounded-[20px] shadow-xl" // Borda arredondada maior
+            className="rounded-[20px] shadow-xl" 
           >
             {/* Slide 1 */}
             <SwiperSlide>
@@ -44,7 +43,7 @@ export const HighlightsSection = () => {
               </div>
             </SwiperSlide>
 
-            {/* Slide 2 (Exemplo) */}
+            {/* Slide 2 */}
             <SwiperSlide>
               <div className="relative flex items-end p-8 h-[500px] bg-cover bg-center text-white" style={{backgroundImage: `url(${podcastImage2})`}}>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>

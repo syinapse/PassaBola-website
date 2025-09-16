@@ -3,7 +3,6 @@ import sobreImage from '../assets/PassaBola/AboutUs.png';
 
 export const AboutSection = () => {
   return (
-    // ALTERADO AQUI: de bg-gray-50 para a cor de fundo roxa do seu tema
     <section id="sobre" className="bg-[#F9F0FF] py-20 px-6 font-poppins">
       <div className="container mx-auto text-center">
         <h2 className="text-5xl font-bold mb-12 text-gray-800 font-quando">Sobre a gente</h2>

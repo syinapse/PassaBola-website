@@ -25,7 +25,6 @@ export const SocialSection = () => {
               <span>Só no Youtube</span>
             </p>
             
-            {/* Métricas com cores customizadas direto na classe */}
             <p className="text-3xl text-white/90">
               <span className="font-bold text-5xl text-white">210</span> <span className="font-bold text-[#BC6FF1]">Mil+</span> inscritos
             </p>

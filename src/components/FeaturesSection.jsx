@@ -1,4 +1,3 @@
-// src/components/FeaturesSection.jsx
 import React from 'react';
 import { UsersIcon, ShoppingBagIcon, NewspaperIcon } from '@heroicons/react/24/outline';
 
