@@ -48,4 +48,5 @@
 .swiper-pagination-bullet-active {
   background-color: var(--color-btn-accent, #E5599D) !important; 
   opacity: 1 !important;
+
 }

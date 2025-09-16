@@ -2,6 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { PortalInicial } from './pages/PortalInicial'
 
+
+
 import { Error404 } from './pages/Error404'
 import { Noticias } from './pages/Noticias'
 import { CadatroNova } from './pages/CadatroNova'
@@ -32,7 +34,7 @@ export const AppRouter = () => {
     <Route path='/clubes' element={<SessaoClubes/>}/>
     <Route path='/mapaquadras' element={<MapaQuadras/>}/>
     <Route path='/loja' element={<Loja/>}/>
-  <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
+    <Route path='/cadastro-usuario' element={<CadastroUsuario/>}/>
     <Route path='/cadastro-clube' element={<CadastroClube/>}/>
 
 

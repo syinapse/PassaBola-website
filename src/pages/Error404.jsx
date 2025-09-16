@@ -10,7 +10,7 @@ export const Error404 = () => {
           <img 
         src={logo} 
         alt="Logo Fundo" 
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10 w-3/7 h-auto pointer-events-none"
+        className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10 w-3/7 h-auto pointer-events-none"
       />
       
       <Header3/>

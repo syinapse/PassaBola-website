@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 import { ButtonCadastro } from './ui/ButtonCadastro'
 import { useNavigate } from 'react-router-dom'
 import logo from '../assets/logos/LogoPassaabola.svg'
-import search from '../assets/icons/BasicSearch.svg'
 
 export const Header2 = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false) 
   const navigate = useNavigate()
 
-  const handleClick = () => navigate('/cadastro')
+
   const handleLogin = () => navigate('/')
 
   return (
@@ -43,6 +42,12 @@ export const Header2 = () => {
                     onClick={() => { navigate("/jogadores"); setDialogOpen(false) }}
                   >
                     Área de atleta
+                  </button>
+                          <button
+                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                    onClick={() => { navigate("/clubes"); setDialogOpen(false) }}
+                  >
+                    Área de clubes
                   </button>
                 </div>
               )}
@@ -83,15 +88,21 @@ export const Header2 = () => {
               <div className="w-full flex flex-col items-start bg-gray-100 text-gray-800 rounded shadow-md p-2">
                 <button
                   className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
-                  onClick={() => { navigate("/conexao1"); setDialogOpen(false); setMenuOpen(false); }}
+                  onClick={() => { navigate("/mapaquadras"); setDialogOpen(false); setMenuOpen(false); }}
                 >
-                  Conexão 1
+                   Mapa de Quadras
                 </button>
                 <button
                   className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
-                  onClick={() => { navigate("/conexao2"); setDialogOpen(false); setMenuOpen(false); }}
+                  onClick={() => { navigate("/jogadores"); setDialogOpen(false); setMenuOpen(false); }}
                 >
-                  Conexão 2
+                  Área de atleta
+                </button>
+                       <button
+                  className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
+                  onClick={() => { navigate("/clubes"); setDialogOpen(false); setMenuOpen(false); }}
+                >
+                  Área de clubes
                 </button>
               </div>
             )}

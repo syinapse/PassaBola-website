@@ -1,4 +1,22 @@
 import React from 'react';
+// import { Link } from '';
+import { Header1 } from '../components/Header1';
+import { Footer } from '../components/Footer';
+import { NewsCard } from '../components/NewsCard';
+import { FilterSidebar } from '../components/FilterSidebar';
+
+// Importe dos logos e o banner (verifique se os caminhos estão corretos)
+import bannerImage from '../assets/PaginaPrincipal/Banner.jpg'; 
+import logoCamp1 from '../assets/PaginaPrincipal/Ellipse1.png';
+import logoCamp2 from '../assets/PaginaPrincipal/Ellipse2.png';
+import logoCamp3 from '../assets/PaginaPrincipal/Ellipse3.png';
+import logoCamp4 from '../assets/PaginaPrincipal/Ellipse4.png';
+import logoCamp5 from '../assets/PaginaPrincipal/Ellipse5.png';
+
+// Imagens para os cards de notícia (verifique os nomes e caminhos)
+import newsImage1 from '../assets/PaginaPrincipal/Cruzeiro.png';
+import newsImage2 from '../assets/PaginaPrincipal/Corinthians.png'; 
+import newsImage3 from '../assets/PaginaPrincipal/Marta.png';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -11,76 +29,104 @@ import slide3 from '../assets/PassaBola/LojaBanner.png';
 
 export const PortalInicial = () => {
   const slides = [
-  { 
-    image: slide1, 
-    title: 'Acesse o nosso canal', 
-    type: 'video'
-  },
-  { 
-    image: slide2, 
-    title: 'Copa Passa\na Bola', 
-    type: 'link', 
-    buttonText: 'Se Inscreva',
-    linkTo: '/inscricao-copa-passa-a-bola'
-  },
-  { 
-    image: slide3, 
-    title: 'Conheça a Loja\nPassa a Bola', 
-    type: 'link', 
-    buttonText: 'Conheça Já!',
-    linkTo: '/loja'
-  },
-];
+    { 
+      image: slide1, 
+      title: 'Acesse o nosso canal', 
+      type: 'video'
+    },
+    { 
+      image: slide2, 
+      title: 'Copa Passa\na Bola', 
+      type: 'link',
+      buttonText: 'Se Inscreva',
+      linkTo: '/inscricao-copa-passa-a-bola'
+    },
+    { 
+      image: slide3, 
+      title: 'Conheça a Loja\nPassa a Bola', 
+      type: 'link',
+      buttonText: 'Conheça Já!',
+      linkTo: '/loja'
+    },
+  ];
 
   return (
-    <section id="inicio">
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        spaceBetween={0}
-        slidesPerView={1}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        loop={true}
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div 
-              className={`relative flex flex-col h-screen bg-black px-10 md:px-20 lg:px-40 
-                ${slide.type === 'video' 
-                  ? 'justify-center items-center text-center' 
-                  : 'justify-center items-start text-left'
-                }`
-              }
+    <>
+      <Header1 />
+
+      <main>
+        {/* ===== SEÇÃO DO BANNER PRINCIPAL ===== */}
+        <section 
+          className='relative flex flex-col justify-center items-start px-10 md:px-20 lg:px-40'
+          style={{ 
+            backgroundImage: `url(${bannerImage})`, 
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '100vh', 
+          }}
+        >
+          {/* Overlay escuro para contraste */}
+          <div className="absolute inset-0 bg-black opacity-50"></div> 
+          
+          {/* Container para o conteúdo do banner */}
+          <div className="relative z-10">
+            <h2 className='text-7xl text-white leading-tight mb-8 font-quando'>
+              Brasil luta, mas é <br />
+              derrotado na final <br />
+              contra os EUA      
+            </h2>
+            <Link 
+              to="../saibamais" 
+              className='inline-block border-purple-500 bg-transparent border-2 rounded-full px-12 py-3 text-purple-500 font-semibold text-xl transition-all duration-300 hover:bg-purple-500 hover:text-white'
             >
-              <img src={slide.image} alt={slide.title} className="absolute inset-0 w-full h-full object-cover opacity-50"/>
-              
-              <div className="relative z-10">
-                <h1 className="text-white text-6xl md:text-8xl leading-tight mb-8 font-bold whitespace-pre-line font-quando"> 
-                  {slide.title}
-                </h1>
+              Saiba Mais
+            </Link>
+          </div>
+        </section>
 
-                {slide.type === 'video' && (
-                  <button className="bg-white/30 backdrop-blur-sm rounded-full p-6 hover:bg-white/50 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 text-white">
-                      <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.647c1.295.742 1.295 2.545 0 3.286L7.279 20.99c-1.25.717-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
-                    </svg>
-                  </button>
-                )}
+        {/* ===== SEÇÃO CAMPEONATOS ===== */}
+        <section className='bg-[#F4F4F4] flex items-center flex-col gap-2 py-16'>
+          <h2 className='font-medium text-2xl text-gray-800'>Campeonatos</h2>
+          <div className='flex flex-wrap justify-center items-center gap-x-12 gap-y-6 py-10 px-4'>
+            <img src={logoCamp1} alt="Logo Campeonato 1" className="h-20 w-auto object-contain" />
+            <img src={logoCamp2} alt="Logo Campeonato 2" className="h-20 w-auto object-contain" />
+            <img src={logoCamp3} alt="Logo Campeonato 3" className="h-20 w-auto object-contain" />
+            <img src={logoCamp4} alt="Logo Campeonato 4" className="h-20 w-auto object-contain" />
+            <img src={logoCamp5} alt="Logo Campeonato 5" className="h-20 w-auto object-contain" />
+          </div>
+        </section>
 
-                {slide.type === 'link' && (
-                  // ===== BOTÃO BEM MAIOR AQUI =====
-                  <Link 
-                    to={slide.linkTo}
-                    className='inline-block border-purple-500 bg-transparent border-2 rounded-full px-16 py-5 text-purple-500 font-semibold text-3xl transition-all duration-300 hover:bg-purple-500 hover:text-white'
-                  >
-                    {slide.buttonText}
-                  </Link>
-                )}
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
+        {/* ===== SEÇÃO FILTROS E CARDS ===== */}
+        <div className='bg-[#F4F4F4] grid grid-cols-1 lg:grid-cols-12 gap-8 p-10 lg:p-16'>
+          
+          {/* Coluna da Sidebar de Filtros */}
+          <aside className="col-span-1 lg:col-span-3">
+            <FilterSidebar />
+          </aside>
+
+          {/* Coluna dos Cards de Notícias (alinhada à direita) */}
+          <div className="col-span-1 lg:col-span-7 lg:col-start-6 flex flex-col gap-8">
+            <NewsCard 
+              imageSrc={newsImage1}
+              title="Cruzeiro feminino ainda não sabe quando vai jogar em 2025"
+              date="11/01/2025"
+            />
+            <NewsCard 
+              imageSrc={newsImage2}
+              title="Corinthians feminino é campeão mundial em 2025"
+              date="09/06/2025"
+            />
+            <NewsCard 
+              imageSrc={newsImage3}
+              title="Ao lado de Marta, mato-grossense Ana Vitória é convocada pela Seleção para a Copa América"
+              date="11/01/2025"
+            />
+          </div>
+
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 };
