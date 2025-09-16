@@ -13,7 +13,7 @@ export const Login = () => {
 
   const users = [
     { username: "leonardokina18@gmail.com", password: "1234" },
-    { username: "mariaplays@gmail.com", password: "abcd" }
+    { username: "admin@passaabola.com.br", password: "abcd" }
   ]
 
   const handleLogin = () => {
