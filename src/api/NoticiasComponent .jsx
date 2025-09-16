@@ -12,7 +12,7 @@ const NoticiasAPI = () => {
         method: 'GET',
         url: 'https://newsapi.org/v2/everything',
         params: {
-          q: 'futebol',
+          q: 'futebol feminino',
           language: 'pt',
           apiKey: '2fd63faf57c3431d87eed681ad2d3572'
         }
