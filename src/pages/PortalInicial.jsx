@@ -9,28 +9,28 @@ import slide1 from '../assets/PassaBola/Fiap.jpeg';
 import slide2 from '../assets/PassaBola/CopaBola.png';
 import slide3 from '../assets/PassaBola/LojaBanner.png';
 
-export const HeroSection = () => {
+export const PortalInicial = () => {
   const slides = [
-    { 
-      image: slide1, 
-      title: 'Acesse o nosso canal', 
-      type: 'video'
-    },
-    { 
-      image: slide2, 
-      title: 'Copa Passa\na Bola', 
-      type: 'link',
-      buttonText: 'Se Inscreva',
-      linkTo: '/inscricao-copa-passa-a-bola'
-    },
-    { 
-      image: slide3, 
-      title: 'Conheça a Loja\nPassa a Bola', 
-      type: 'link',
-      buttonText: 'Conheça Já!',
-      linkTo: '/loja'
-    },
-  ];
+  { 
+    image: slide1, 
+    title: 'Acesse o nosso canal', 
+    type: 'video'
+  },
+  { 
+    image: slide2, 
+    title: 'Copa Passa\na Bola', 
+    type: 'link', 
+    buttonText: 'Se Inscreva',
+    linkTo: '/inscricao-copa-passa-a-bola'
+  },
+  { 
+    image: slide3, 
+    title: 'Conheça a Loja\nPassa a Bola', 
+    type: 'link', 
+    buttonText: 'Conheça Já!',
+    linkTo: '/loja'
+  },
+];
 
   return (
     <section id="inicio">

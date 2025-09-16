@@ -22,10 +22,6 @@
 .font-quando {
   font-family: 'Quando', serif;
 }
-<<<<<<< HEAD
-.font-oswald{
-   font-family: "Oswald", sans-serif;
-=======
 
 
 
@@ -52,5 +48,4 @@
 .swiper-pagination-bullet-active {
   background-color: var(--color-btn-accent, #E5599D) !important; 
   opacity: 1 !important;
->>>>>>> 58f840437da28ab41341fc9abb6183eb45d3a351
 }
