@@ -20,18 +20,22 @@ export const Login = () => {
     const user = users.find(
       (u) => u.username === username && u.password === password
     )
+ 
 
     if (user) {
       setMessage("Login bem-sucedido! 🎉");
+      console.log('sim')
     } else {
       setMessage("Usuário ou senha incorretos!");
+      console.log('nn')
+
     }
   }
 
   return (
     <div className='h-screen overflow-hidden'>
       <Header3 />
-      <div className='min-h-screen flex md:flex-row'>
+      <div className='min-h-screen mb-5 flex md:flex-row'>
         <div className="w-1/2 bg-white flex items-center justify-center">
           {/*lado esqurdo da tela de ligin*/}
           <video
@@ -44,9 +48,9 @@ export const Login = () => {
         </div>
 
 
-        <div className='w-full md:w-1/2 flex flex-col items-center justify-start pt-8 md:pt-20 gap-8 min-h-screen bg-background'>
+        <div className='w-full md:w-1/2 flex flex-col items-center justify-start pt-8 md:pt-20 gap-2 min-h-screen bg-background'>
           {/*lado direito da tela de ligin*/}
-          <div className='flex flex-col items-start ml-8 md:ml-20 lg:ml-40 px-8 w-full gap-3'>
+          <div className='flex flex-col items-start ml-8 md:ml-20 lg:ml-40 px-8 w-full gap'>
             <h2 className='text-4xl font-quando'>Login <span className='text-text-accent font-oswald text-3xl'>PASSA A BOLA</span></h2>
             <button className='bg-white p-2 rounded-2xl border-1 flex gap-1 border-gray-300 font-semibold cursor-pointer'><img src={logoGoogle} className="w-6 h-6 object-contain" alt="google" /> Entre com Google</button>
             <hr className="border-t border-gray-400 w-2xl my-4" />
@@ -82,12 +86,7 @@ export const Login = () => {
             </div>
             <p className='ml-auto text-gray-400 font-medium italic'>Esqueci minha senha...</p>
           </div>
-          <div className='flex flex-col gap-5'>
-            <button className='bg-primary text-white font-semibold px-18 py-4 rounded-xl shadow-md text-xl'
-              onClick={handleLogin}>ACESSAR</button>
-            <p className='font-medium'>Não possuí uma conta? <span className='text-primary underline'>Crie Agora!</span></p>
-          </div>
-          {message && (
+                    {message && (
             <p
               className={`text-center ${message.includes("bem-sucedido") ? "text-green-600" : "text-red-600"
                 }`}
@@ -95,6 +94,12 @@ export const Login = () => {
               {message}
             </p>
           )}
+          <div className='flex flex-col gap-5'>
+            <button className='bg-primary cursor-pointer text-white font-semibold px-18 py-4 rounded-xl shadow-md text-xl'
+              onClick={handleLogin}>ACESSAR</button>
+            <p className='font-medium'>Não possuí uma conta? <span className='text-primary underline'>Crie Agora!</span></p>
+          </div>
+
         </div>
       </div>
     </div>

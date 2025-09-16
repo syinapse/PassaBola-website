@@ -83,15 +83,15 @@ export const Header2 = () => {
               <div className="w-full flex flex-col items-start bg-gray-100 text-gray-800 rounded shadow-md p-2">
                 <button
                   className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
-                  onClick={() => { navigate("/conexao1"); setDialogOpen(false); setMenuOpen(false); }}
+                  onClick={() => { navigate("/mapaquadras"); setDialogOpen(false); setMenuOpen(false); }}
                 >
-                  Conexão 1
+                   Mapa de Quadras
                 </button>
                 <button
                   className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
-                  onClick={() => { navigate("/conexao2"); setDialogOpen(false); setMenuOpen(false); }}
+                  onClick={() => { navigate("/jogadores"); setDialogOpen(false); setMenuOpen(false); }}
                 >
-                  Conexão 2
+                  Área de atleta
                 </button>
               </div>
             )}

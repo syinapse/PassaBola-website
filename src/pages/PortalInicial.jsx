@@ -17,6 +17,7 @@ import logoCamp5 from '../assets/PaginaPrincipal/Ellipse5.png';
 import newsImage1 from '../assets/PaginaPrincipal/Cruzeiro.png';
 import newsImage2 from '../assets/PaginaPrincipal/Corinthians.png'; 
 import newsImage3 from '../assets/PaginaPrincipal/Marta.png';
+import { Link } from 'react-router-dom';
 
 export const PortalInicial = () => {
   return (
@@ -45,7 +46,7 @@ export const PortalInicial = () => {
               contra os EUA      
             </h2>
             <Link 
-              to="../pages/Noticias" 
+              to="../saibamais" 
               className='inline-block border-purple-500 bg-transparent border-2 rounded-full px-12 py-3 text-purple-500 font-semibold text-xl transition-all duration-300 hover:bg-purple-500 hover:text-white'
             >
               Saiba Mais
