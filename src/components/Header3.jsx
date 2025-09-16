@@ -13,7 +13,7 @@ export const Header3 = () => {
   const handleLogin = () => navigate('/')
 
   return (
-    <header className="flex justify-between items-center  sm:p-4 md:p-4 bg-secondary-2 relative">
+    <header className="flex justify-between items-center p-3 sm:p-4 md:p-4 bg-secondary-2 relative">
 
       <div className="flex items-center gap-6 md:gap-20 text-amber-50 font-bold">
         <button onClick={handleLogin} className='cursor-pointer'>
@@ -44,6 +44,12 @@ export const Header3 = () => {
                   >
                     Área de atleta
                   </button>
+                       <button
+                  className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
+                  onClick={() => { navigate("/clubes"); setDialogOpen(false); setMenuOpen(false); }}
+                >
+                  Área de clubes
+                </button>
                 </div>
               )}
             </li>
@@ -88,13 +94,19 @@ export const Header3 = () => {
                   className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
                   onClick={() => { navigate("/mapaquadras"); setDialogOpen(false); setMenuOpen(false); }}
                 >
-                   Mapa de Quadras
+                                      Mapa de Quadras
                 </button>
                 <button
                   className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
                   onClick={() => { navigate("/jogadores"); setDialogOpen(false); setMenuOpen(false); }}
                 >
-                  Área de atleta
+                    Área de atleta 
+                </button>
+                                <button
+                  className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
+                  onClick={() => { navigate("/clubes"); setDialogOpen(false); setMenuOpen(false); }}
+                >
+                    Área de clubes 
                 </button>
               </div>
             )}

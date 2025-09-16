@@ -44,6 +44,12 @@ export const Header1 = () => {
                   >
                     Área de atleta
                   </button>
+                     <button
+                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                    onClick={() => { navigate("/clubes"); setDialogOpen(false) }}
+                  >
+                    Área de clubes
+                  </button>
                 </div>
               )}
             </li>
@@ -100,6 +106,12 @@ export const Header1 = () => {
                   onClick={() => { navigate("/jogadores"); setDialogOpen(false); setMenuOpen(false); }}
                 >
                      Área de atleta
+                </button>
+                        <button
+                  className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
+                  onClick={() => { navigate("/clubes"); setDialogOpen(false); setMenuOpen(false); }}
+                >
+                     Área de clubes
                 </button>
               </div>
             )}

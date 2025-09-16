@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 import { ButtonCadastro } from './ui/ButtonCadastro'
 import { useNavigate } from 'react-router-dom'
 import logo from '../assets/logos/LogoPassaabola.svg'
-import search from '../assets/icons/BasicSearch.svg'
 
 export const Header2 = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false) 
   const navigate = useNavigate()
 
-  const handleClick = () => navigate('/cadastro')
+
   const handleLogin = () => navigate('/')
 
   return (
@@ -43,6 +42,12 @@ export const Header2 = () => {
                     onClick={() => { navigate("/jogadores"); setDialogOpen(false) }}
                   >
                     Área de atleta
+                  </button>
+                          <button
+                    className="w-full text-left px-2 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                    onClick={() => { navigate("/clubes"); setDialogOpen(false) }}
+                  >
+                    Área de clubes
                   </button>
                 </div>
               )}
@@ -92,6 +97,12 @@ export const Header2 = () => {
                   onClick={() => { navigate("/jogadores"); setDialogOpen(false); setMenuOpen(false); }}
                 >
                   Área de atleta
+                </button>
+                       <button
+                  className="w-full text-left px-2 py-1 hover:bg-gray-200 rounded"
+                  onClick={() => { navigate("/clubes"); setDialogOpen(false); setMenuOpen(false); }}
+                >
+                  Área de clubes
                 </button>
               </div>
             )}
