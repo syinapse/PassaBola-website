@@ -9,6 +9,10 @@ import fundo from "../assets/noticias/fundo.png";
 import luana from "../assets/noticias/luana.png";
 import video1 from "../assets/noticias/video1.png";
 import emoji from "../assets/noticias/emoji.png";
+import correndo from "../assets/icons/correndo.png";
+import trofeu from "../assets/icons/trofeu.png";
+import campo from "../assets/icons/campo.png";
+
 
 import video2 from "../assets/noticias/video2.png";
 import like from '../assets/icons/like.png';
@@ -63,35 +67,42 @@ export const SessaoClubes = () => {
                                 />
                             </div>
                             <div className="pt-16 pb-6 text-center">
-                                <h2 className="text-xl font-bold">Luana Alves</h2>
+                                <h2 className="text-xl font-bold">Aurora FC</h2>
                                 <p className="text-md text-gray-500">
-                                    Posição: <span className="font-bold">MEI</span>
+                                    SUB-14 até SUB-20<span className="font-bold"></span>
                                 </p>
-                                <p className="text-md text-gray-500">Jogadora do Aurora FC</p>
                                 <p className="text-gray-600 text-md mt-4 px-6 leading-relaxed text-left">
-                                    Criativa, inteligente e com visão de jogo apurada. Distribui o jogo, chega no ataque e faço a diferença com passes e finalizações.
-                                </p>
+Com base em São Paulo, o Aurora FC é um projeto dedicado à descoberta, formação e valorização de jogadoras de base. Acreditamos que o futebol é uma ferramenta... LEIA MAIS                                </p>
                             </div>
                         </div>
 
                         <div className="bg-white rounded-xl shadow-sm p-6 h-fit">
                             <div className="space-y-4">
                                 <div className="flex items-center space-x-2 ">
-                                    <FaFutbol className="text-purple-600 text-xl" />
+                                    <img 
+                                    className='text-xl'
+                                    src={campo}
+                                    />
                                     <span>
-                                        <strong className="text-purple-600 text-md">19</strong> Peneiras Organizadas
+                                        <strong className="text-primary text-md">19</strong> Peneiras Organizadas
                                     </span>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <FaTrophy className="text-purple-600 text-xl" />
+                                    <img 
+                                    className='text-xl'
+                                    src={trofeu}
+                                    />
                                     <span>
-                                        <strong className="text-purple-600 text-md">03</strong> Titulos Conquistados
+                                        <strong className="text-primary text-md">03</strong> Titulos Conquistados
                                     </span>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <FaRegClock className="text-purple-600 text-xl" />
+                                    <img 
+                                    className='text-xl'
+                                    src={correndo}
+                                    />
                                     <span>
-                                        <strong className="text-purple-600 text-md">60</strong> Jogadoras de Base
+                                        <strong className="text-primary text-md">60</strong> Jogadoras de Base
                                     </span>
                                 </div>
                             </div>

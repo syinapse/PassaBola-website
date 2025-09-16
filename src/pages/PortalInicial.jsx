@@ -15,11 +15,6 @@ import logoCamp3 from '../assets/PaginaPrincipal/Ellipse3.png'
 import logoCamp4 from '../assets/PaginaPrincipal/Ellipse4.png'
 import logoCamp5 from '../assets/PaginaPrincipal/Ellipse5.png'
 
-
-import newsImage1 from '../assets/PaginaPrincipal/Cruzeiro.png'
-import newsImage2 from '../assets/PaginaPrincipal/Corinthians.png';
-import newsImage3 from '../assets/PaginaPrincipal/Marta.png'
-
 import slide1 from '../assets/PassaBola/Fiap.jpeg'
 import slide2 from '../assets/PassaBola/CopaBola.png'
 import slide3 from '../assets/PassaBola/LojaBanner.png'
