@@ -33,7 +33,12 @@ Nosso objetivo é **ampliar a visibilidade do futebol feminino**, oferecendo um 
 )
 
 
-
+## Membros
+Carlos Eduardo Sanches Mariano RM:561756
+Leonardo Eiji Kina RM:562784
+Luís Scacchetti Mariano RM:562241
+Rodrigo do Santos Abubakir RM:561479
+Vitor Ramos de Farias RM:561958
 
 ---
 
